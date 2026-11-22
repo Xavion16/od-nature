@@ -895,8 +895,7 @@ const products = [
     "specs": "Özel Tasarım Cam Kibritlik & Kibritler",
     "colors": [],
     "images": [
-      "images/cam-kibritlik-1.jpg",
-      "images/cam-kibritlik-2.jpg"
+      "images/cam-kibritlik-1.jpg"
     ]
   }
 ];
@@ -2001,13 +2000,21 @@ function closeCheckout(){
 
 // --- KOLEKSİYON & HİKÂYEMİZ FOTOĞRAF YÜKLEME ---
 const collectionDefs = [
-  { cat: "Aura", label: "Aura", alt: "Aura · Ferahlık Serisi", defaultImg: "images/aura-mint.jpg" },
+  { cat: "Aura", label: "Aura", alt: "Aura · Ferahlık Serisi", defaultImg: "images/aura-fresh-2.jpg" },
   { cat: "Sculpture & Form", label: "Sculpture & Form", alt: "Heykel ve Form Serisi", defaultImg: "images/collection-sculptur.jpg" },
-  { cat: "Woodfire", label: "Woodfire", alt: "Odun Ateşi Serisi", defaultImg: "images/woodfire.jpg" },
+  { cat: "Woodfire", label: "Woodfire", alt: "Odun Ateşi Serisi", defaultImg: "images/woodfire-dark-single.jpg" },
   { cat: "Candle Making Kit", label: "Candle Making Kit", alt: "Evde Mum Yapım Kiti", defaultImg: "images/candle-making-kit.jpg" },
   { cat: "Candle Care Kit", label: "Candle Care Kit", alt: "Mum Bakım Kiti", defaultImg: "images/cam-kibritlik.jpg" }
 ];
 let sectionPhotos = JSON.parse(localStorage.getItem("odnature-section-photos") || "{}");
+
+// Koleksiyon kartlarındaki güncel görseller, önceki yerel yüklemelerin önüne geçsin.
+if(sectionPhotos.collectionImagePreset !== "woodfire-dark-aura-fresh-v1"){
+  delete sectionPhotos.col_0;
+  delete sectionPhotos.col_2;
+  sectionPhotos.collectionImagePreset = "woodfire-dark-aura-fresh-v1";
+  localStorage.setItem("odnature-section-photos", JSON.stringify(sectionPhotos));
+}
 
 function saveSectionPhotos(){
   try { localStorage.setItem("odnature-section-photos", JSON.stringify(sectionPhotos)); } catch(e){}
