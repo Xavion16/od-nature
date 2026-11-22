@@ -542,7 +542,8 @@ const products = [
     "specs": "%100 Pamuk Fitil | 150g Soya Wax",
     "colors": [],
     "images": [
-      "images/aura-mint-info.jpg"
+      "images/aura-mint-info.jpg",
+      "images/aura-mint.jpeg"
     ],
     "originalPrice": 420,
     "burnTime": "30-35 saat"
@@ -768,7 +769,7 @@ const products = [
       "Yeşil"
     ],
     "images": [
-      "images/sculpture-12-bubble-four.png"
+      "images/sculpture-12-bubble-six.jpg"
     ],
     "dimensions": "6 cm x 6 cm"
   },
@@ -2004,15 +2005,16 @@ const collectionDefs = [
   { cat: "Sculpture & Form", label: "Sculpture & Form", alt: "Heykel ve Form Serisi", defaultImg: "images/collection-sculptur.jpg" },
   { cat: "Woodfire", label: "Woodfire", alt: "Odun Ateşi Serisi", defaultImg: "images/woodfire-dark-single.jpg" },
   { cat: "Candle Making Kit", label: "Candle Making Kit", alt: "Evde Mum Yapım Kiti", defaultImg: "images/candle-making-kit.jpg" },
-  { cat: "Candle Care Kit", label: "Candle Care Kit", alt: "Mum Bakım Kiti", defaultImg: "images/cam-kibritlik.jpg" }
+  { cat: "Candle Care Kit", label: "Candle Care Kit", alt: "Mum Bakım Kiti", defaultImg: "images/candle-care-kit-1.jpg" }
 ];
 let sectionPhotos = JSON.parse(localStorage.getItem("odnature-section-photos") || "{}");
 
 // Koleksiyon kartlarındaki güncel görseller, önceki yerel yüklemelerin önüne geçsin.
-if(sectionPhotos.collectionImagePreset !== "woodfire-dark-aura-fresh-v1"){
+if(sectionPhotos.collectionImagePreset !== "care-kit-v2"){
   delete sectionPhotos.col_0;
   delete sectionPhotos.col_2;
-  sectionPhotos.collectionImagePreset = "woodfire-dark-aura-fresh-v1";
+  delete sectionPhotos.col_4;
+  sectionPhotos.collectionImagePreset = "care-kit-v2";
   localStorage.setItem("odnature-section-photos", JSON.stringify(sectionPhotos));
 }
 
