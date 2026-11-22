@@ -1,0 +1,3092 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OD&NATURE | Doğanın ateşi, evinizin ahengi</title>
+<meta name="description" content="OD&NATURE el yapımı mum ve dekoratif tasarım koleksiyonları. Aura, Sculpture & Form ve Woodfire koleksiyonlarını keşfedin.">
+<style>
+:root{--ink:#29251f;--muted:#756d62;--cream:#f7f4ee;--paper:#fffdfa;--sand:#e8dfd1;--olive:#777b60;--line:#e8e1d7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+button,a{font:inherit}a{color:inherit;text-decoration:none}.topline{background:#35382c;color:#f8f5ed;text-align:center;padding:10px 16px;font:11px Arial,sans-serif;letter-spacing:2px}
+header{position:sticky;top:0;z-index:5;background:#fffdfaee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1220px;margin:auto;padding:19px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:inline-flex;align-items:center;gap:12px;font-size:25px;letter-spacing:3px;white-space:nowrap;text-decoration:none;color:inherit}.brand-logo{height:54px;width:auto;object-fit:contain;flex-shrink:0;display:block}.brand-text{display:flex;flex-direction:column}.brand small{display:block;text-align:center;font:9px Arial,sans-serif;letter-spacing:2px;margin-top:4px;color:var(--muted)}
+nav{display:flex;gap:28px;font:11px Arial,sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:#514b42}
+.nav-actions{display:flex;gap:16px;align-items:center;font:12px Arial,sans-serif}.cart-btn{border:1px solid var(--ink);background:transparent;padding:10px 15px;cursor:pointer}
+.menu-toggle{display:none;background:none;border:0;font-size:22px}
+.hero{min-height:570px;background-image:linear-gradient(90deg,rgba(29,27,22,.64),rgba(29,27,22,.28)),url('images/hero.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;background-color:#b9ad98;display:flex;align-items:center}
+.hero-inner{max-width:1220px;width:100%;margin:auto;padding:80px 7%;color:#fff}
+.hero{position:relative;overflow:hidden}
+.hero-inner{position:relative;z-index:2;width:100%}
+.hero-logo-front{position:absolute;right:5%;top:50%;transform:translateY(calc(-50% - 76px));width:min(420px,38vw);max-height:78%;object-fit:contain;pointer-events:none;z-index:1;filter:drop-shadow(0 8px 24px rgba(0,0,0,.28))}
+@media(max-width:760px){
+  .hero-logo-front{right:4%;top:auto;bottom:14px;transform:none;width:min(190px,42vw);max-height:150px;opacity:.92}
+}
+.eyebrow{font:10px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase}
+.hero h1{font-size:clamp(42px,6vw,76px);font-weight:400;line-height:1.04;max-width:620px;margin:22px 0}
+.hero p{font:14px/1.8 Arial,sans-serif;max-width:430px;color:#f3eee6}
+.btn{display:inline-block;background:var(--ink);color:white;padding:15px 25px;border:1px solid var(--ink);font:10px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:.2s}
+.btn:hover{background:transparent;color:var(--ink)}.hero .btn{background:#f8f4ec;color:#28241e;border-color:#f8f4ec;margin-top:18px}
+.section{max-width:1220px;margin:auto;padding:82px 28px}.section-head{text-align:center;margin-bottom:38px}.section-head .eyebrow{color:var(--olive)}h2{font-size:38px;font-weight:400;margin:12px 0}.section-head p{font:13px/1.7 Arial,sans-serif;color:var(--muted);max-width:560px;margin:0 auto}
+.collections{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.collection{height:310px;position:relative;overflow:hidden;background:#ddd5c9}.collection img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.collection:hover img{transform:scale(1.04)}.collection span{position:absolute;bottom:22px;left:22px;color:white;font-size:27px;text-shadow:0 1px 8px #0008}
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin:0 0 32px}.filter-btn{border:1px solid var(--line);background:transparent;padding:11px 15px;cursor:pointer;font:11px Arial,sans-serif}.filter-btn.active{background:var(--ink);color:white}.series-label{font:10px Arial,sans-serif;letter-spacing:1px;color:var(--olive);margin-bottom:8px}.pending{font:12px Arial,sans-serif;color:var(--muted)}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 20px}.product{min-width:0}.product-image{height:330px;background:var(--cream);position:relative;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.product:hover .product-image img{transform:scale(1.035)}.product-info{padding:17px 2px}.product-info h3{font-size:19px;font-weight:400;margin:0 0 8px}.product-info p{font:12px/1.6 Arial,sans-serif;color:var(--muted);min-height:38px;margin:0 0 12px}.price{font:13px Arial,sans-serif;letter-spacing:.5px}.product-info button{float:right;border:0;background:none;text-decoration:underline;text-underline-offset:4px;font:10px Arial,sans-serif;letter-spacing:1px;cursor:pointer}
+.story{background:var(--cream)}.story-inner{max-width:1220px;margin:auto;padding:80px 28px;display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.story-image{height:440px;background:url('images/story.jpg') center/cover no-repeat,#d8cbbb}.story-copy .eyebrow{color:var(--olive)}.story-copy h2{font-size:42px;line-height:1.15}.story-copy p{font:14px/1.9 Arial,sans-serif;color:var(--muted)}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}.value{padding:28px 15px;border-top:1px solid var(--line)}.value b{display:block;font-size:20px;font-weight:400;margin-bottom:10px}.value span{font:12px/1.7 Arial,sans-serif;color:var(--muted)}
+footer{background:#33362b;color:#f6f2e9;padding:45px 28px;text-align:center}.footer-brand{font-size:25px;letter-spacing:3px}.footer-tag{font:10px Arial,sans-serif;letter-spacing:2px;margin:10px 0 25px;color:#d6cfbf}.footer-note{font:11px Arial,sans-serif;color:#c9c2b5}
+.modal-backdrop{display:none;position:fixed;inset:0;background:#0007;z-index:20;align-items:center;justify-content:center;padding:18px}.modal-backdrop.open{display:flex}.modal{background:var(--paper);width:min(680px,100%);max-height:90vh;overflow:auto;padding:30px;position:relative}.close{position:absolute;right:18px;top:15px;border:0;background:none;font-size:24px;cursor:pointer}.modal h2{font-size:30px}.cart-line{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:15px 0;font:13px Arial,sans-serif}.cart-line button{border:0;background:none;text-decoration:underline;cursor:pointer}.cart-total{display:flex;justify-content:space-between;padding:20px 0;font:15px Arial,sans-serif}.empty{color:var(--muted);font:13px Arial,sans-serif;padding:20px 0}.checkout-fields{display:grid;gap:12px;margin:20px 0}.checkout-fields input,.checkout-fields textarea{width:100%;padding:13px;border:1px solid var(--line);background:white;font:13px Arial,sans-serif}.checkout-fields textarea{min-height:75px}.notice{background:#f0ede5;padding:13px;font:12px/1.6 Arial,sans-serif;color:#5d584f;margin:15px 0}
+@media(max-width:760px){.nav{padding:15px 18px}.menu-toggle{display:block}nav{display:none;position:absolute;top:65px;left:0;right:0;background:var(--paper);padding:22px;flex-direction:column;gap:20px;border-bottom:1px solid var(--line)}nav.show{display:flex}.brand{font-size:20px}.nav-actions{gap:8px}.cart-btn{padding:9px}.hero{min-height:500px}.hero-inner{padding:60px 8%}.section{padding:60px 18px}.collections{grid-template-columns:1fr 1fr}.collection{height:220px}.products{grid-template-columns:1fr 1fr;gap:22px 12px}.product-image{height:230px}.product-info h3{font-size:16px}.story-inner{grid-template-columns:1fr;gap:30px;padding:60px 18px}.story-image{height:300px}.values{grid-template-columns:1fr}.section-head h2{font-size:32px}}
+@media(max-width:420px){.products{grid-template-columns:1fr 1fr}.product-image{height:190px}.collection{height:175px}.collection span{font-size:21px;left:14px;bottom:14px}.brand{letter-spacing:2px}}
+
+.product-image,.product-info h3{cursor:pointer}
+.detail-modal{width:min(860px,100%);padding:0;overflow:hidden}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;min-height:460px}
+.detail-media{background:var(--cream);position:relative;min-height:360px}
+.detail-media img{width:100%;height:100%;object-fit:cover;display:block}
+.detail-body{padding:38px 34px;display:flex;flex-direction:column;justify-content:center}
+.detail-body .eyebrow{color:var(--olive);margin-bottom:8px}
+.detail-body h2{font-size:32px;margin:0 0 10px;line-height:1.15}
+.detail-price{font:18px Arial,sans-serif;margin:0 0 18px;color:var(--ink)}
+.detail-desc{font:13.5px/1.75 Arial,sans-serif;color:#4e483f;margin:0 0 20px}
+.detail-specs{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;margin-bottom:22px;display:grid;gap:10px;font:12.5px/1.6 Arial,sans-serif}
+.detail-spec-row{display:flex;flex-direction:column;gap:2px}
+.detail-spec-row strong{font:10px Arial,sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:var(--olive)}
+.detail-spec-row span{color:var(--ink)}
+@media(max-width:760px){.detail-grid{grid-template-columns:1fr}.detail-media{min-height:280px;max-height:340px}.detail-body{padding:26px 22px}}
+
+.detail-thumbs{display:flex;gap:10px;margin-top:12px}
+.detail-thumb{width:76px;height:76px;object-fit:cover;border:2px solid transparent;cursor:pointer;opacity:.72;transition:.2s;background:var(--cream)}
+.detail-thumb.active,.detail-thumb:hover{border-color:var(--ink);opacity:1}
+.detail-colors{display:flex;flex-wrap:wrap;gap:7px;margin-top:4px}
+.color-chip{border:1px solid var(--line);background:var(--cream);padding:5px 11px;font:11.5px Arial,sans-serif;cursor:pointer;color:var(--ink)}
+.color-chip.selected{background:var(--ink);color:#fff;border-color:var(--ink)}
+.detail-stock{font:11.5px Arial,sans-serif;color:var(--olive);margin-bottom:14px}
+.card-box{background:#f7f4ee;border:1px solid var(--line);padding:16px;margin:14px 0}
+.card-box-title{font:11px Arial,sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:var(--olive);margin-bottom:12px;font-weight:700}
+.card-row-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pay-btn{width:100%;margin-top:6px}
+
+.scheme-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.scheme-badges{display:flex;gap:8px;align-items:center}
+.scheme-badge{display:inline-flex;align-items:center;justify-content:center;padding:5px 11px;border-radius:4px;font:700 11px Arial,sans-serif;letter-spacing:1.2px;border:1px solid #d7cfc2;background:#fff;color:#29251f}
+.scheme-badge.visa{color:#1a1f71;border-color:#c6cde8;font-style:italic;font-size:12px}
+.scheme-badge.troy{color:#00529b;border-color:#b7d4ee}
+.scheme-badge.active-scheme{box-shadow:0 0 0 2px var(--ink)}
+.secure-tag{font:10.5px Arial,sans-serif;color:var(--olive);letter-spacing:.4px}
+.otp-box{background:#f7f4ee;border:1px solid var(--line);padding:18px;margin:14px 0}
+.otp-code-hint{font:12px/1.6 Arial,sans-serif;color:#5d584f;margin:0 0 12px}
+.otp-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.link-btn{background:none;border:0;text-decoration:underline;cursor:pointer;font:11.5px Arial,sans-serif;color:var(--ink);padding:6px 4px}
+.otp-status{font:12px Arial,sans-serif;color:var(--olive);margin-top:10px;min-height:18px}
+
+.nav-actions{display:flex;gap:10px;align-items:center;font:11px Arial,sans-serif}
+.icon-btn{border:1px solid var(--line);background:transparent;padding:10px 13px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;letter-spacing:.8px;color:var(--ink);transition:.2s;white-space:nowrap}
+.icon-btn:hover{border-color:var(--ink)}
+.fav-toggle{position:absolute;top:12px;right:12px;z-index:2;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#fffdfae6;color:var(--ink);font-size:17px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.2s}
+.fav-toggle:hover{transform:scale(1.06);border-color:var(--ink)}
+.fav-toggle.active{background:#29251f;color:#fff;border-color:#29251f}
+.detail-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn-outline{display:inline-block;background:transparent;color:var(--ink);padding:15px 20px;border:1px solid var(--ink);font:10px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:.2s}
+.btn-outline:hover{background:var(--ink);color:#fff}
+.auth-tabs{display:flex;border-bottom:1px solid var(--line);margin-bottom:18px;gap:18px}
+.auth-tab{background:none;border:0;border-bottom:2px solid transparent;padding:10px 4px;cursor:pointer;font:12px Arial,sans-serif;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted)}
+.auth-tab.active{color:var(--ink);border-bottom-color:var(--ink);font-weight:700}
+.faq-item{border-bottom:1px solid var(--line);padding:14px 0}
+.faq-item h4{margin:0 0 6px;font-size:16px;font-weight:400;color:var(--ink)}
+.faq-item p{margin:0;font:12.5px/1.65 Arial,sans-serif;color:var(--muted)}
+.fav-row{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:14px 0}
+.fav-row-left{display:flex;align-items:center;gap:12px}
+.fav-row-left img{width:54px;height:54px;object-fit:cover;background:var(--cream)}
+.fav-row-actions{display:flex;gap:10px;align-items:center}
+.fav-row-actions button{border:0;background:none;text-decoration:underline;cursor:pointer;font:11.5px Arial,sans-serif;color:var(--ink)}
+
+footer{background:#33362b;color:#f6f2e9;padding:58px 28px 34px;text-align:center}
+.footer-top{max-width:1100px;margin:0 auto 36px}
+.footer-cols{max-width:1040px;margin:0 auto 38px;display:grid;grid-template-columns:repeat(3,1fr);gap:34px;text-align:center}
+.footer-col h4{font:400 18px Georgia,'Times New Roman',serif;margin:0 0 14px;color:#fff;letter-spacing:.5px}
+.footer-col ul{list-style:none;padding:0;margin:0;display:grid;gap:9px;font:12.5px/1.6 Arial,sans-serif;color:#dfd9cc}
+.footer-col a,.footer-col button{background:none;border:0;padding:0;color:#dfd9cc;cursor:pointer;font:12.5px/1.6 Arial,sans-serif;text-decoration:none;transition:.2s}
+.footer-col a:hover,.footer-col button:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.footer-social{display:flex;justify-content:center;gap:14px;margin:0 0 18px}
+.social-circle{width:38px;height:38px;border-radius:50%;border:1px solid #c9c2b566;display:inline-flex;align-items:center;justify-content:center;color:#f6f2e9;transition:.2s}
+.social-circle:hover{background:#f6f2e9;color:#33362b;border-color:#f6f2e9}
+.footer-payments{display:flex;justify-content:center;align-items:center;gap:10px;margin:0 0 26px}
+.pay-pill{background:#fff;color:#29251f;padding:4px 10px;border-radius:4px;font:700 10.5px Arial,sans-serif;letter-spacing:1px;display:inline-flex;align-items:center;gap:4px}
+.pay-pill.visa{color:#1a1f71;font-style:italic;font-size:11.5px}
+.pay-pill.troy{color:#00529b}
+.mc-dots{display:inline-flex;align-items:center}
+.mc-dots i{width:11px;height:11px;border-radius:50%;display:inline-block}
+.mc-dots i:first-child{background:#eb001b}
+.mc-dots i:last-child{background:#f79e1b;margin-left:-4px;opacity:.9}
+.footer-bottom{max-width:1040px;margin:0 auto;padding-top:22px;border-top:1px solid #ffffff22;font:11.5px Arial,sans-serif;color:#c9c2b5}
+
+@media(max-width:760px){
+  .footer-cols{grid-template-columns:1fr;gap:26px}
+  .nav-actions{gap:6px}
+  .icon-btn,.cart-btn{padding:8px 10px;font-size:10px}
+}
+
+.hero-flex{display:flex;align-items:center;justify-content:space-between;gap:36px;width:100%}
+.hero-copy{max-width:640px}
+.hero-logo-box{flex:0 0 auto;background:#fffdfae6;padding:18px 22px;border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center}
+.hero-logo-box img{width:220px;max-width:34vw;height:auto;display:block;object-fit:contain}
+@media(max-width:860px){
+  .hero-flex{flex-direction:column;align-items:flex-start;gap:24px}
+  .hero-logo-box img{width:165px;max-width:52vw}
+}
+
+/* Ürün detay modalında aşağı doğru kaydırma (scroll) */
+.detail-modal{width:min(880px,100%);max-height:90vh;overflow-y:auto;padding:0;overscroll-behavior:contain}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;min-height:460px;align-items:start}
+.detail-media{background:var(--cream);position:sticky;top:0;min-height:360px}
+@media(max-width:760px){
+  .detail-modal{max-height:92vh;overflow-y:auto}
+  .detail-grid{grid-template-columns:1fr}
+  .detail-media{position:relative;min-height:280px;max-height:none}
+  .detail-body{padding:24px 20px 32px}
+}
+
+/* Trendyol tarzı yana kaydırmalı fotoğraf galerisi (kart ve detay sayfası) */
+.carousel-wrap{position:relative;width:100%;height:100%;overflow:hidden;user-select:none}
+.carousel-track{display:flex;width:100%;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.carousel-track::-webkit-scrollbar{display:none}
+.carousel-slide{flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;position:relative;display:flex;align-items:center;justify-content:center}
+.carousel-slide img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.detail-carousel{position:relative;width:100%;height:370px;background:#f2ece2;border-radius:4px;overflow:hidden}
+.detail-carousel .carousel-slide img{object-fit:contain;background:#f7f4ee}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:#fffdfae8;color:var(--ink);font-size:16px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transition:.2s;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.product-image:hover .carousel-arrow,.detail-carousel:hover .carousel-arrow,.carousel-arrow.always-show{opacity:1}
+@media(max-width:760px){.carousel-arrow{opacity:.9;width:28px;height:28px}}
+.carousel-arrow:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.carousel-arrow.prev{left:10px}
+.carousel-arrow.next{right:10px}
+.carousel-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);z-index:3;display:flex;gap:5px;background:rgba(41,37,31,.35);padding:4px 8px;border-radius:999px}
+.carousel-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.55);border:0;padding:0;cursor:pointer;transition:.2s}
+.carousel-dot.active{background:#fff;width:14px;border-radius:4px}
+
+/* Kodsuz Doğrudan Fotoğraf Yönetimi (Site Üzerinden Ekle / Sil) */
+.photo-admin-bar{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin:-12px 0 26px}
+.photo-mgr-btn{border:1px dashed var(--olive);background:#f7f4ee;color:var(--ink);padding:9px 15px;font:11px Arial,sans-serif;letter-spacing:1px;cursor:pointer;transition:.2s}
+.photo-mgr-btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.card-add-photo{position:absolute;bottom:10px;right:10px;z-index:3;background:#fffdfae8;border:1px solid var(--line);color:var(--ink);padding:5px 9px;font:10px Arial,sans-serif;letter-spacing:.5px;cursor:pointer;border-radius:4px;opacity:0;transition:.2s}
+.product-image:hover .card-add-photo{opacity:1}
+@media(max-width:760px){.card-add-photo{opacity:.92}}
+.photo-mgr-grid{display:grid;gap:14px;margin-top:14px}
+.photo-mgr-item{border:1px solid var(--line);background:#fff;padding:14px;display:grid;gap:10px}
+.photo-mgr-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.photo-mgr-thumbs{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.photo-mgr-thumb-box{position:relative;width:72px;height:72px;border:1px solid var(--line);background:var(--cream)}
+.photo-mgr-thumb-box img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-mgr-del{position:absolute;top:-6px;right:-6px;width:20px;height:20px;border-radius:50%;border:0;background:#b9382c;color:#fff;font-size:12px;line-height:1;cursor:pointer}
+.upload-label{display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:#fff;padding:8px 13px;font:10.5px Arial,sans-serif;letter-spacing:1px;text-transform:uppercase;cursor:pointer}
+.upload-label input{display:none}
+
+
+.discount-badge{position:absolute;top:12px;left:12px;z-index:2;background:#8c3227;color:#fff;padding:5px 9px;border-radius:3px;font:700 10.5px Arial,sans-serif;letter-spacing:.6px}
+.old-price{font:12px Arial,sans-serif;color:var(--muted);text-decoration:line-through;margin-right:6px}
+.detail-old-price{font:14px Arial,sans-serif;color:var(--muted);text-decoration:line-through;margin-right:8px}
+.box-photo-btn{position:absolute;right:12px;bottom:12px;z-index:3;background:#fffdfae8;color:var(--ink);border:1px solid var(--line);padding:6px 11px;border-radius:4px;font:10.5px Arial,sans-serif;letter-spacing:.6px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.14);transition:.2s}
+.box-photo-btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.box-photo-btn input{display:none}
+.story-image{position:relative;overflow:hidden}
+.story-image img{width:100%;height:100%;object-fit:cover;display:block}
+.summary-box{background:#f7f4ee;border:1px solid var(--line);padding:16px;margin:14px 0}
+.summary-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;font:12.5px Arial,sans-serif;color:#4e483f}
+.summary-row.discount-line{color:#8c3227;font-weight:700}
+.summary-row.total-line{border-top:1px solid var(--line);margin-top:8px;padding-top:10px;font:700 15px Arial,sans-serif;color:var(--ink)}
+.promo-row{display:flex;gap:8px;margin:12px 0}
+.promo-row input{flex:1;padding:11px 12px;border:1px solid var(--line);background:#fff;font:12.5px Arial,sans-serif}
+.order-card{border:1px solid var(--line);background:#fff;padding:14px;margin-bottom:12px}
+.order-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px;font:12px Arial,sans-serif}
+.status-pill{padding:4px 10px;border-radius:999px;font:700 10.5px Arial,sans-serif;background:#e8dfd1;color:#29251f}
+.steps-track{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.step-item{padding:8px;border:1px solid var(--line);border-radius:4px;text-align:center;font:11px Arial,sans-serif;color:var(--muted);background:#faf8f4}
+.step-item.done{background:#35382c;color:#fff;border-color:#35382c;font-weight:700}
+.saved-card-item{border:1px solid var(--line);background:#fff;padding:10px 12px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;font:12px Arial,sans-serif}
+
+
+/* Ürün detay sol görsel alanının boşluksuz tam kaplaması ve büyütme (Lightbox) */
+.detail-grid{align-items:stretch !important}
+.detail-media{padding:0 !important;height:100%;min-height:480px;display:flex !important;flex-direction:column}
+.detail-carousel{height:100% !important;min-height:480px;border-radius:0 !important;flex:1}
+.detail-carousel .carousel-slide{cursor:zoom-in}
+.detail-carousel .carousel-slide img{width:100%;height:100%;object-fit:cover !important;background:var(--cream)}
+@media(max-width:760px){
+  .detail-media,.detail-carousel{min-height:340px;height:340px !important}
+}
+.lightbox-backdrop{display:none;position:fixed;inset:0;background:rgba(20,18,15,.92);z-index:9999;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lightbox-backdrop.open{display:flex}
+.lightbox-backdrop img{max-width:94vw;max-height:90vh;object-fit:contain;border-radius:4px;box-shadow:0 12px 40px rgba(0,0,0,.5);cursor:default}
+.lightbox-close{position:fixed;top:18px;right:22px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(41,37,31,.75);color:#fff;font-size:24px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10000}
+.lightbox-nav{position:fixed;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(41,37,31,.75);color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10000}
+.lightbox-nav.prev{left:18px}
+.lightbox-nav.next{right:18px}
+
+/* Şifre göster/gizle göz ikonu */
+.password-field-wrap{position:relative;width:100%}
+.password-field-wrap input{padding-right:42px !important}
+.password-toggle-btn{position:absolute;right:10px;top:50%;transform:translateY(-50%);border:0;background:none;color:var(--muted);cursor:pointer;padding:4px;display:flex;align-items:center;justify-content:center;transition:.2s}
+.password-toggle-btn:hover{color:var(--ink)}
+
+
+/* Ödeme yöntemleri, kaydetme onay kutuları ve üyelik yönlendirme kutusu */
+.pay-methods-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0 16px}
+.pay-method-btn{border:1px solid var(--line);background:#fff;padding:12px 8px;text-align:center;cursor:pointer;font:11.5px Arial,sans-serif;color:var(--ink);transition:.2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.pay-method-btn:hover{border-color:var(--ink)}
+.pay-method-btn.active{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:700}
+.save-check-row{display:flex;align-items:center;gap:8px;font:12px Arial,sans-serif;color:var(--ink);cursor:pointer;margin-top:6px;user-select:none}
+.save-check-row input[type="checkbox"]{width:16px;height:16px;accent-color:var(--ink);cursor:pointer;margin:0}
+.bank-info-box{background:#f7f4ee;border:1px solid var(--line);padding:15px;margin:12px 0;font:12.5px/1.7 Arial,sans-serif;color:var(--ink)}
+.auth-gate-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+@media(max-width:520px){
+  .pay-methods-grid{grid-template-columns:1fr}
+  .auth-gate-actions{grid-template-columns:1fr}
+}
+
+
+/* Ürün detay sağ taraftaki yazıların hepsinin yukarıdan (birkaç cm boşlukla) hizalı başlaması */
+.detail-body{justify-content:flex-start !important;padding-top:52px !important}
+@media(max-width:760px){
+  .detail-body{padding-top:34px !important}
+}
+
+
+/* Satın Alanların Yorumları Bölümü */
+.reviews-section{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.reviews-layout{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;align-items:start}
+.review-box{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:30px 28px;box-shadow:0 6px 24px rgba(41,37,31,.04)}
+.review-box h3{font-size:26px;font-weight:400;margin:0 0 20px;color:var(--ink)}
+.review-field{margin-bottom:16px}
+.review-field label{display:block;font:600 12px Arial,sans-serif;color:var(--ink);margin-bottom:7px}
+.review-field input,.review-field select,.review-field textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font:13.5px Arial,sans-serif;outline:none;transition:.2s}
+.review-field input:focus,.review-field select:focus,.review-field textarea:focus{border-color:var(--olive)}
+.review-field textarea{min-height:92px;resize:vertical}
+.review-submit-btn{background:#2d3126;color:#fff;border:0;border-radius:999px;padding:13px 26px;font:600 13px Arial,sans-serif;cursor:pointer;transition:.2s;margin-top:4px}
+.review-submit-btn:hover{background:var(--ink)}
+.reviews-list{display:flex;flex-direction:column}
+.review-item{padding:16px 0;border-bottom:1px solid var(--line)}
+.review-item:first-child{padding-top:4px}
+.review-item:last-child{border-bottom:0;padding-bottom:4px}
+.review-item-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:6px;flex-wrap:wrap}
+.review-item-meta{font:13.5px Arial,sans-serif;color:var(--ink)}
+.review-item-meta strong{font-weight:700}
+.review-item-meta span{color:var(--muted)}
+.review-item-stars{color:#9c7a3c;font:12.5px Arial,sans-serif;letter-spacing:1px;white-space:nowrap}
+.review-item-text{font:13.5px/1.6 Arial,sans-serif;color:#554e45;margin:0}
+@media(max-width:860px){.reviews-layout{grid-template-columns:1fr}}
+
+/* Sol üst köşede Son 3 Ürün etiketi ve sepette düşük stok uyarısı */
+.cart-low-stock{color:#8c3227;font-weight:700;font-size:11px;margin-left:6px}
+.low-stock-badge{position:absolute;top:12px;left:12px;z-index:2;background:#8c3227;color:#fff;padding:5px 9px;border-radius:3px;font:700 10.5px Arial,sans-serif;letter-spacing:.6px}
+
+
+/* OD&NATURE AI Ürün Asistanı Baloncuğu */
+.ai-chat-launcher{position:fixed;right:22px;bottom:22px;z-index:18;display:flex;align-items:center;gap:10px;background:#2d3126;color:#f8f5ed;border:1px solid #494f3e;border-radius:999px;padding:12px 18px;box-shadow:0 10px 28px rgba(41,37,31,.24);cursor:pointer;font:600 12.5px Arial,sans-serif;letter-spacing:.4px;transition:.2s}
+.ai-chat-launcher:hover{background:#29251f;transform:translateY(-2px)}
+.ai-chat-launcher .ai-dot{width:9px;height:9px;border-radius:50%;background:#b8c499;box-shadow:0 0 0 4px rgba(184,196,153,.22)}
+.ai-chat-box{position:fixed;right:22px;bottom:80px;z-index:19;width:min(370px,calc(100vw - 32px));height:500px;max-height:calc(100vh - 110px);background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 46px rgba(41,37,31,.22);display:none;flex-direction:column;overflow:hidden}
+.ai-chat-box.open{display:flex}
+.ai-chat-head{background:#35382c;color:#f8f5ed;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ai-chat-head-title{font-family:Georgia,'Times New Roman',serif;font-size:15px;letter-spacing:.5px}
+.ai-chat-head-sub{font:10.5px Arial,sans-serif;color:#d6d0c4;margin-top:2px}
+.ai-chat-close{background:none;border:0;color:#f8f5ed;font-size:22px;line-height:1;cursor:pointer;padding:2px 6px}
+.ai-chat-messages{flex:1;padding:14px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;background:var(--cream)}
+.ai-msg{max-width:86%;padding:10px 13px;border-radius:12px;font:13px/1.5 Arial,sans-serif;white-space:pre-line}
+.ai-msg.bot{align-self:flex-start;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-bottom-left-radius:3px}
+.ai-msg.user{align-self:flex-end;background:#2d3126;color:#f8f5ed;border-bottom-right-radius:3px}
+.ai-msg-card{margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);display:flex;flex-wrap:wrap;gap:6px}
+.ai-prod-link{background:var(--cream);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:4px 10px;font:11px Arial,sans-serif;cursor:pointer}
+.ai-prod-link:hover{border-color:var(--ink)}
+.ai-chat-chips{display:flex;flex-wrap:nowrap;gap:6px;padding:8px 12px;overflow-x:auto;overflow-y:hidden;background:var(--paper);border-top:1px solid var(--line);-webkit-overflow-scrolling:touch;scrollbar-width:thin;touch-action:pan-x}
+.ai-chat-chips::-webkit-scrollbar{display:none}
+.ai-chip{flex:0 0 auto;white-space:nowrap;background:var(--cream);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:5px 10px;font:11px Arial,sans-serif;cursor:pointer}
+.ai-chip:hover{border-color:var(--olive)}
+.ai-chat-form{display:flex;gap:8px;padding:10px 12px;background:var(--paper);border-top:1px solid var(--line)}
+.ai-chat-form input{flex:1;border:1px solid var(--line);border-radius:999px;padding:9px 14px;font:13px Arial,sans-serif;background:#fff;outline:none}
+.ai-chat-form input:focus{border-color:var(--olive)}
+.ai-chat-form button{background:#2d3126;color:#fff;border:0;border-radius:999px;padding:9px 15px;font:600 12px Arial,sans-serif;cursor:pointer}
+
+
+/* Mobil uyumluluk ve fotoğraf görünürlüğü iyileştirmeleri */
+@media(max-width:760px){
+  html,body{width:100%;overflow-x:hidden}
+  .nav{gap:8px;flex-wrap:wrap}
+  .brand{font-size:18px;letter-spacing:1.8px;gap:8px}.brand-logo{height:38px}
+  .brand small{font-size:7px;letter-spacing:1px}
+  .nav-actions{margin-left:auto;flex-wrap:wrap;justify-content:flex-end}
+  nav{z-index:30;max-height:calc(100vh - 90px);overflow-y:auto}
+  .hero{background-position:center;min-height:470px}
+  .hero h1{font-size:clamp(34px,9vw,48px)}
+  .hero p{max-width:95%}
+  .product-image{height:clamp(170px,48vw,250px)}
+  .carousel-wrap,.carousel-track,.carousel-slide{min-height:100%;height:100%}
+  .carousel-slide img{width:100%;height:100%;object-fit:cover;visibility:visible;opacity:1}
+  .detail-carousel{height:clamp(260px,78vw,360px)}
+  .detail-carousel .carousel-slide img{object-fit:contain}
+  .collections{gap:10px}
+  .collection{min-width:0}
+  .section{padding-left:15px;padding-right:15px}
+  .cart-line{align-items:center;flex-wrap:wrap}
+  .cart-line-main{min-width:0;flex:1}
+}
+@media(max-width:390px){
+  .nav{padding:12px 10px}
+  .nav-actions{gap:4px}
+  .icon-btn,.cart-btn{padding:7px 7px;font-size:9px}
+  .product-image{height:165px}
+  .products{gap:18px 9px}
+  .product-info{padding:12px 1px}
+  .product-info h3{font-size:14px}
+}
+.image-missing{display:flex!important;align-items:center;justify-content:center;text-align:center;padding:16px;background:linear-gradient(135deg,#eee8dd,#d9cfbf)!important;color:#6e6659;font:11px/1.5 Arial,sans-serif}
+.image-missing::after{content:attr(data-placeholder);max-width:220px}
+.cart-qty-controls{display:inline-flex;align-items:center;gap:10px;margin-left:18px;margin-right:10px;vertical-align:middle}
+.cart-qty-controls button{width:26px;height:26px;border-radius:999px;border:1px solid var(--line);background:var(--cream);text-decoration:none!important;font:15px Arial,sans-serif!important;line-height:1;padding:0;display:inline-flex;align-items:center;justify-content:center;transition:.2s}
+.cart-qty-controls button:hover{border-color:var(--ink)}
+.policy-content{font:13px/1.75 Arial,sans-serif;color:#514b42}
+.policy-content h3{font:17px Georgia,serif;color:var(--ink);margin:20px 0 6px}
+.policy-note{background:#f0ede5;border-left:3px solid var(--olive);padding:12px 14px;margin:14px 0;font:12px/1.65 Arial,sans-serif}
+.photo-transfer-tools{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0 18px;padding:13px;background:#f7f4ee;border:1px solid var(--line)}
+.photo-transfer-tools button,.photo-transfer-tools label{border:1px solid var(--olive);background:#fffdfa;padding:9px 12px;font:11px Arial,sans-serif;cursor:pointer;color:var(--ink)}
+.photo-transfer-tools input{display:none}
+
+</style>
+</head>
+<body>
+<div class="topline">DOĞADAN İLHAM ALAN EL YAPIMI MUM KOLEKSİYONU</div>
+<header><div class="nav">
+  <button class="menu-toggle" onclick="toggleMobileNav()" aria-label="Menüyü aç">☰</button>
+  <a class="brand" href="#anasayfa"><img src="images/logo.png" alt="OD&amp;NATURE Logo" class="brand-logo"><span class="brand-text">OD&amp;NATURE<small>DOĞANIN ATEŞİ, EVİNİZİN AHENGİ</small></span></a>
+  <nav id="main-navigation"><a href="#anasayfa" onclick="closeMobileNav()">Ana Sayfa</a><a href="#koleksiyonlar" onclick="closeMobileNav()">Koleksiyonlar</a><a href="#urunler" onclick="closeMobileNav()">Ürünler</a><a href="#hikayemiz" onclick="closeMobileNav()">Hikâyemiz</a><a href="#iletisim" onclick="closeMobileNav()">İletişim</a></nav>
+  <div class="nav-actions">
+    <button class="icon-btn" id="header-account-btn" onclick="openAuthModal('login')">GİRİŞ YAP</button>
+    <button class="icon-btn" onclick="openFavoritesModal()" title="Favorilerim">♡ (<span id="fav-count">0</span>)</button>
+    <button class="cart-btn" onclick="openCart()">SEPET (<span id="cart-count">0</span>)</button>
+  </div>
+</div></header>
+<main>
+<section class="hero" id="anasayfa"><div class="hero-inner"><div class="hero-copy"><div class="eyebrow">OD&amp;NATURE • HANDMADE COLLECTION</div><h1>Doğanın sıcaklığını yaşam alanınıza taşıyın.</h1><p>Özenle tasarlanan, doğadan ilham alan mumlarla yaşam alanınızda kendinize ait bir atmosfer yaratın.</p><a class="btn" href="#urunler">KOLEKSİYONU KEŞFET</a></div></div></section>
+<section class="section" id="koleksiyonlar"><div class="section-head"><div class="eyebrow">KEŞFEDİN</div><h2>Koleksiyonlarımız</h2><p>Her tasarım, yaşam alanınıza küçük ama özel bir dokunuş katmak için hazırlandı.</p></div>
+<div class="collections" id="collections-grid"></div></section>
+<section class="section" id="urunler" style="padding-top:20px"><div class="section-head"><div class="eyebrow">SİZİN İÇİN SEÇTİKLERİMİZ</div><h2>Ürünlerimiz</h2></div>
+<div class="filters" id="product-filters"></div><div class="products" id="product-grid"></div></section>
+<section class="story" id="hikayemiz"><div class="story-inner"><div class="story-image" id="story-photo-box" role="img" aria-label="OD&amp;NATURE atmosfer fotoğrafı">
+  <img id="story-photo-img" src="images/story.jpg" alt="OD&amp;NATURE Hikâyemiz" onerror="this.style.opacity=0">
+</div><div class="story-copy">
+  <div class="eyebrow">BİZİM HİKÂYEMİZ</div>
+  <h2>Doğanın ateşi, evinizin ahengi.</h2>
+  <p>Markamızın adı Öz Türkçe'de "ateş" anlamına gelen <b>Od</b> ile doğallığı temsil eden <b>Nature</b> kelimelerinin birleşiminden doğdu. Sentetik ve solunumu zorlaştırabilen parafin mumlar yerine; soya fasulyesi yağından elde edilen, çevre dostu ve toksik madde içermeyen <b>%100 doğal soya waxı</b> ile yaşam alanlarında güvenli ve huzurlu bir atmosfer kurguladık.</p>
+  <p>Bütünsel estetiği yansıtan <b>"Doğanın Ateşi, Evinizin Ahengi"</b> mottosunun yanında; okaliptüs ve nane özlerinin ferahlığını öne çıkaran <b>"Her solukta doğal bir tazelik"</b> ve evde kendi mumunu üretme keyfi sunan <b>"Kendi Işığını Kendin Yarat"</b> yaklaşımıyla her anınıza eşlik ediyoruz.</p>
+</div></div></section>
+<section class="section"><div class="values"><div class="value"><b>Özenli Tasarım</b><span>Her ürünün formuna ve görünümüne ayrı bir özen.</span></div><div class="value"><b>Doğadan İlham</b><span>Doğal tonlar ve sıcak dokulardan ilham alan koleksiyonlar.</span></div><div class="value"><b>Yaşam Alanınıza Özel</b><span>Evinizde kendinize ait bir atmosfer yaratın.</span></div></div></section>
+</main>
+<section class="section reviews-section" id="yorumlar">
+  <div class="section-head">
+    <div class="eyebrow">MÜŞTERİ YORUMLARI</div>
+    <h2>Kullanıcı deneyimleri ve puanlar</h2>
+    <p>Ürünler hakkında adınızla veya kullanıcı adınızla yorum bırakabilir ve puan verebilirsiniz.</p>
+  </div>
+  <div class="reviews-layout">
+    <div class="review-box">
+      <h3>Yorum yaz</h3>
+      <form id="review-form">
+        <div class="review-field">
+          <label for="rev-author">Adınız / Kullanıcı adınız</label>
+          <input type="text" id="rev-author" placeholder="Örn. Kübra Yılmaz, Mert Arslan veya kullanıcı" required>
+        </div>
+        <div class="review-field">
+          <label for="rev-product">Ürün</label>
+          <select id="rev-product" required></select>
+        </div>
+        <div class="review-field">
+          <label for="rev-rating">Puanınız (Yıldız)</label>
+          <select id="rev-rating">
+            <option value="5">★★★★★ (5 / 5)</option>
+            <option value="4">★★★★☆ (4 / 5)</option>
+            <option value="3">★★★☆☆ (3 / 5)</option>
+            <option value="2">★★☆☆☆ (2 / 5)</option>
+            <option value="1">★☆☆☆☆ (1 / 5)</option>
+          </select>
+        </div>
+        <div class="review-field">
+          <label for="rev-comment">Yorumunuz</label>
+          <textarea id="rev-comment" placeholder="Ürünün kullanımı ve hissiyatı hakkındaki düşüncelerinizi paylaşın..." required></textarea>
+        </div>
+        <button type="submit" class="review-submit-btn">Yorumu gönder</button>
+      </form>
+    </div>
+
+    <div class="review-box">
+      <h3>Son yorumlar</h3>
+      <div class="reviews-list" id="reviews-list"></div>
+    </div>
+  </div>
+</section>
+<footer id="iletisim">
+  <div class="footer-top">
+    <div class="footer-brand">OD&amp;NATURE</div>
+    <div class="footer-tag">DOĞANIN ATEŞİ, EVİNİZİN AHENGİ</div>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <h4>İletişim Bilgileri</h4>
+      <ul>
+        <li><a href="mailto:info@odnature.com">info@odnature.com</a></li>
+        <li><a href="tel:+905059724470">0505 972 44 70</a></li>
+        <li>Adres: Bağdat Caddesi No: 248, Kadıköy / İstanbul</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hakkımızda ve S.S.S</h4>
+      <ul>
+        <li><a href="#hikayemiz">Hakkımızda</a></li>
+        <li><button type="button" onclick="openFaqModal()">Sıkça Sorulan Sorular</button></li>
+        <li><button type="button" onclick="openFeedbackModal()">Şikayet ve Öneriler</button></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Yardım</h4>
+      <ul>
+        <li><a href="#anasayfa">Anasayfa</a></li>
+        <li><button type="button" onclick="openReturnModal()">İade ve Değişim</button></li>
+        <li><button type="button" onclick="openShippingModal()">Kargo ve Teslimat</button></li>
+        <li><button type="button" onclick="openPrivacyModal()">KVKK ve Gizlilik</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-social">
+    <a class="social-circle" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" onclick="openSocialApp(event, 'fb://', 'https://www.facebook.com/')" aria-label="Facebook" title="Facebook">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
+    </a>
+    <a class="social-circle" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" onclick="openSocialApp(event, 'instagram://app', 'https://www.instagram.com/')" aria-label="Instagram" title="Instagram">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+    </a>
+  </div>
+  <div class="footer-payments">
+    <span class="pay-pill visa">VISA</span>
+    <span class="pay-pill troy">TROY</span>
+    <span class="pay-pill" aria-label="Mastercard"><span class="mc-dots"><i></i><i></i></span></span>
+  </div>
+  <div class="footer-bottom">© 2026 OD&amp;NATURE • Doğanın ateşi, evinizin ahengi.</div>
+</footer>
+<div class="modal-backdrop" id="cart-modal" onclick="if(event.target===this)closeCart()"><div class="modal"><button class="close" onclick="closeCart()">×</button><div id="cart-content"></div></div></div>
+<div class="modal-backdrop" id="checkout-modal" onclick="if(event.target===this)closeCheckout()"><div class="modal"><button class="close" onclick="closeCheckout()">×</button><div id="checkout-content"></div></div></div>
+<div class="modal-backdrop" id="product-modal" onclick="if(event.target===this)closeProductModal()"><div class="modal detail-modal"><button class="close" onclick="closeProductModal()" style="z-index:2;background:#fffdfacc;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center">×</button><div id="product-detail-content"></div></div></div>
+<div class="modal-backdrop" id="auth-modal" onclick="if(event.target===this)closeAuthModal()"><div class="modal"><button class="close" onclick="closeAuthModal()">×</button><div id="auth-content"></div></div></div>
+<div class="modal-backdrop" id="fav-modal" onclick="if(event.target===this)closeFavoritesModal()"><div class="modal"><button class="close" onclick="closeFavoritesModal()">×</button><div id="fav-content"></div></div></div>
+<div class="modal-backdrop" id="info-modal" onclick="if(event.target===this)closeInfoModal()"><div class="modal"><button class="close" onclick="closeInfoModal()">×</button><div id="info-content"></div></div></div>
+<div class="lightbox-backdrop" id="image-lightbox" onclick="if(event.target===this)closeImageLightbox()">
+  <button type="button" class="lightbox-close" onclick="closeImageLightbox()" aria-label="Kapat">×</button>
+  <button type="button" class="lightbox-nav prev" id="lightbox-prev" onclick="stepLightbox(-1, event)" aria-label="Önceki">‹</button>
+  <img id="lightbox-img" src="" alt="Büyütülmüş ürün görseli">
+  <button type="button" class="lightbox-nav next" id="lightbox-next" onclick="stepLightbox(1, event)" aria-label="Sonraki">›</button>
+</div>
+
+
+<button type="button" class="ai-chat-launcher" id="ai-chat-launcher" onclick="toggleAiChat()" aria-label="AI Ürün Asistanı">
+  <span class="ai-dot"></span>
+  <span>AI Ürün Asistanı</span>
+</button>
+
+<div class="ai-chat-box" id="ai-chat-box" role="dialog" aria-label="OD&amp;NATURE AI Ürün Asistanı">
+  <div class="ai-chat-head">
+    <div>
+      <div class="ai-chat-head-title">OD&amp;NATURE AI Asistan</div>
+      <div class="ai-chat-head-sub">Koku, fiyat, içerik ve hediye önerileri</div>
+    </div>
+    <button type="button" class="ai-chat-close" onclick="toggleAiChat(true)" aria-label="Kapat">×</button>
+  </div>
+  <div class="ai-chat-messages" id="ai-chat-messages"></div>
+  <div class="ai-chat-chips">
+    <button type="button" class="ai-chip" onclick="askAiPreset('Ferah kokulu mumlar hangileri?')">Ferah kokular</button>
+    <button type="button" class="ai-chip" onclick="askAiPreset('Odunsu ve sıcak kokular önerir misin?')">Odunsu &amp; sıcak</button>
+    <button type="button" class="ai-chip" onclick="askAiPreset('Hediye için ne önerirsin?')">Hediye önerisi</button>
+    <button type="button" class="ai-chip" onclick="askAiPreset('En uygun fiyatlı ürünler neler?')">Fiyat listesi</button>
+    <button type="button" class="ai-chip" onclick="askAiPreset('Mum bakımı nasıl yapılır?')">Mum bakımı</button>
+  </div>
+  <form class="ai-chat-form" onsubmit="submitAiChat(event)">
+    <input type="text" id="ai-chat-input" placeholder="Ürünler hakkında soru sorun..." autocomplete="off">
+    <button type="submit">Gönder</button>
+  </form>
+</div>
+
+<script>
+const products = [
+  {
+    "id": 1,
+    "name": "Aura Fresh (Doğanın Ferahlığı)",
+    "category": "Aura",
+    "price": 480,
+    "stock": 35,
+    "feature": "Okaliptüs ve Çam esanslı — Nefes açıcı ve ortam havasını tazeleyici.",
+    "description": "Okaliptus ve çam ağacının ferahlatıcı esaslarıyla yaşam alanınızın havasını tazeleyin. Nefesinizi rahatlatan doğal arınma deneyimi. %100 doğal soya waxı",
+    "notes": "Okaliptüs, İğne Çam, Hafif Mentol",
+    "specs": "%100 Pamuk Fitil | 250g Soya Wax",
+    "colors": [],
+    "images": [
+      "images/aura-fresh-1.jpg",
+      "images/aura-fresh-2.jpg"
+    ],
+    "originalPrice": 500,
+    "burnTime": "40-45 saat"
+  },
+  {
+    "id": 2,
+    "name": "Aura Mint (Nane Ferahlığı)",
+    "category": "Aura",
+    "price": 350,
+    "stock": 30,
+    "feature": "Nane aromalı",
+    "description": "Nane aromalarının zindelik veren etkisiyle günün yorgunluğunu geride bırakın. Zihni berraklaştıran ferahlatıcı soya mumu. %100 doğal soya waxı",
+    "notes": "Taze Nane Yaprakları, Hafif Narenciye",
+    "specs": "%100 Pamuk Fitil | 150g Soya Wax",
+    "colors": [],
+    "images": [
+      "images/aura-mint.jpeg",
+      "images/aura-mint-2.jpg"
+    ],
+    "originalPrice": 420,
+    "burnTime": "30-35 saat"
+  },
+  {
+    "id": 3,
+    "name": "Sculpture & Form · Heykel Figür Mumu",
+    "category": "Sculpture & Form",
+    "price": 700,
+    "stock": 40,
+    "feature": "İs yapmayan özel doğal fitil, toksik madde içermez vegandır.",
+    "description": "Sanat ve estetiğin alevle buluşması. Ev dekorasyonunuza zamansız ve modern bir dokunuş katan el yapımı figüratif %100 doğal soya mumları.",
+    "notes": "",
+    "specs": "180g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
+    "colors": [],
+    "images": [
+      "images/sculpture-01-1.jpg",
+      "images/sculpture-01-2.jpg"
+    ],
+    "dimensions": "12 cm x 7 cm"
+  },
+  {
+    "id": 4,
+    "name": "Sculpture & Form · Ayıcık Figürlü Mum",
+    "category": "Sculpture & Form",
+    "price": 600,
+    "stock": 40,
+    "feature": "İs yapmayan özel doğal fitil, toksik madde içermez vegandır.",
+    "description": "Sanat ve estetiğin alevle buluşması. Ev dekorasyonunuza zamansız ve modern bir dokunuş katan el yapımı figüratif %100 doğal soya mumları.",
+    "notes": "",
+    "specs": "120g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
+    "colors": [],
+    "images": [
+      "images/sculpture-02-1.jpg",
+      "images/sculpture-02-2.jpg"
+    ],
+    "dimensions": "8 cm x 6 cm"
+  },
+  {
+    "id": 5,
+    "name": "Sculpture & Form · Burgu Form Mum",
+    "category": "Sculpture & Form",
+    "price": 500,
+    "stock": 40,
+    "feature": "İs yapmayan özel doğal fitil, toksik madde içermez vegandır.",
+    "description": "Sanat ve estetiğin alevle buluşması. Ev dekorasyonunuza zamansız ve modern bir dokunuş katan el yapımı figüratif %100 doğal soya mumları.",
+    "notes": "",
+    "specs": "110g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
+    "colors": [],
+    "images": [
+      "images/sculpture-03-1.jpg",
+      "images/sculpture-03-2.jpg"
+    ],
+    "dimensions": "18 cm x 4 cm"
+  },
+  {
+    "id": 6,
+    "name": "Sculpture & Form · Fiyonk Mumluklu Burgu Mum Seti",
+    "category": "Sculpture & Form",
+    "price": 500,
+    "stock": 40,
+    "feature": "İs yapmayan özel doğal fitil, toksik madde içermez vegandır.",
+    "description": "Sanat ve estetiğin alevle buluşması. Ev dekorasyonunuza zamansız ve modern bir dokunuş katan el yapımı figüratif %100 doğal soya mumları.",
+    "notes": "",
+    "specs": "220g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
+    "colors": [
+      "Mor",
+      "Yeşil",
+      "Mavi",
+      "Pembe"
+    ],
+    "images": [
+      "images/sculpture-04-1.jpg",
+      "images/sculpture-04-2.jpg"
+    ],
+    "dimensions": "Burgu Mum: 18 cm x 2,5 cm | Fiyonk Mumluk Altlık: 11 cm x 8 cm x 3 cm"
+  },
+  {
+    "id": 7,
+    "name": "Sculpture & Form · Hayalet Figürlü Mum",
+    "category": "Sculpture & Form",
+    "price": 200,
+    "stock": 3,
+    "lowStockLabel": "SON 3 ÜRÜN",
+    "feature": "İs yapmayan özel doğal fitil, toksik madde içermez vegandır.",
+    "description": "Sanat ve estetiğin alevle buluşması. Ev dekorasyonunuza zamansız ve modern bir dokunuş katan el yapımı figüratif %100 doğal soya mumları.",
+    "notes": "",
+    "specs": "85g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
+    "colors": [],
+    "images": [
+      "images/sculpture-05-1.jpg",
+      "images/sculpture-05-2.jpg"
+    ],
+    "dimensions": "7 cm x 6 cm"
+  },
+  {
+    "id": 8,
+    "name": "Sculpture & Form · Kuğu Figürlü Mum",
+    "category": "Sculpture & Form",
+    "price": 420,
+    "stock": 40,
+    "feature": "İs yapmayan özel doğal fitil, toksik madde içermez vegandır.",
+    "description": "Sanat ve estetiğin alevle buluşması. Ev dekorasyonunuza zamansız ve modern bir dokunuş katan el yapımı figüratif %100 doğal soya mumları.",
+    "notes": "",
+    "specs": "130g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
+    "colors": [],
+    "images": [
+      "images/sculpture-06-1.jpg",
+      "images/sculpture-06-2.jpg"
+    ],
+    "dimensions": "9 cm x 8 cm"
+  },
+  {
+    "id": 9,
+    "name": "Sculpture & Form · Katmanlı Çam Form Mum",
+    "category": "Sculpture & Form",
+    "price": 250,
+    "stock": 40,
+    "feature": "İs yapmayan özel doğal fitil, toksik madde içermez vegandır.",
+    "description": "Sanat ve estetiğin alevle buluşması. Ev dekorasyonunuza zamansız ve modern bir dokunuş katan el yapımı figüratif %100 doğal soya mumları.",
+    "notes": "",
+    "specs": "100g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
+    "colors": [
+      "Kırmızı",
+      "Beyaz",
+      "Yeşil"
+    ],
+    "images": [
+      "images/sculpture-07-1.jpg",
+      "images/sculpture-07-2.jpg"
+    ],
+    "dimensions": "10 cm x 7 cm"
+  },
+  {
+    "id": 10,
+    "name": "Sculpture & Form · Pastel Burgu Mum Üçlüsü",
+    "category": "Sculpture & Form",
+    "price": 270,
+    "stock": 40,
+    "feature": "İs yapmayan özel doğal fitil, toksik madde içermez vegandır.",
+    "description": "Sanat ve estetiğin alevle buluşması. Ev dekorasyonunuza zamansız ve modern bir dokunuş katan el yapımı figüratif %100 doğal soya mumları.",
+    "notes": "",
+    "specs": "180g (3x60g) %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
+    "colors": [],
+    "images": [
+      "images/sculpture-08-1.jpg",
+      "images/sculpture-08-2.jpg"
+    ],
+    "dimensions": "15 cm x 3 cm (Adet)"
+  },
+  {
+    "id": 11,
+    "name": "Sculpture & Form · 3'lü Kemer Form Mum",
+    "category": "Sculpture & Form",
+    "price": 450,
+    "stock": 40,
+    "feature": "İs yapmayan özel doğal fitil, toksik madde içermez vegandır.",
+    "description": "Sanat ve estetiğin alevle buluşması. Ev dekorasyonunuza zamansız ve modern bir dokunuş katan el yapımı figüratif %100 doğal soya mumları.",
+    "notes": "",
+    "specs": "210g (3'lü Set) %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
+    "colors": [],
+    "images": [
+      "images/sculpture-09-1.jpg",
+      "images/sculpture-09-2.jpg"
+    ],
+    "dimensions": "Büyük Boy: 14 cm x 10 cm | Orta Boy: 11 cm x 8 cm | Küçük Boy: 8 cm x 6 cm"
+  },
+  {
+    "id": 12,
+    "name": "Sculpture & Form · Sütun Form Mum",
+    "category": "Sculpture & Form",
+    "price": 200,
+    "stock": 40,
+    "feature": "İs yapmayan özel doğal fitil, toksik madde içermez vegandır.",
+    "description": "Sanat ve estetiğin alevle buluşması. Ev dekorasyonunuza zamansız ve modern bir dokunuş katan el yapımı figüratif %100 doğal soya mumları.",
+    "notes": "",
+    "specs": "140g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
+    "colors": [
+      "Pembe",
+      "Mor",
+      "Yeşil",
+      "Turuncu",
+      "Beyaz",
+      "Sarı"
+    ],
+    "images": [
+      "images/sculpture-10-1.jpg",
+      "images/sculpture-10-2.jpg"
+    ],
+    "dimensions": "10 cm x 5 cm"
+  },
+  {
+    "id": 13,
+    "name": "Sculpture & Form · Deniz Kabuğu Mum",
+    "category": "Sculpture & Form",
+    "price": 220,
+    "stock": 40,
+    "feature": "İs yapmayan özel doğal fitil, toksik madde içermez vegandır.",
+    "description": "Sanat ve estetiğin alevle buluşması. Ev dekorasyonunuza zamansız ve modern bir dokunuş katan el yapımı figüratif %100 doğal soya mumları.",
+    "notes": "",
+    "specs": "95g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
+    "colors": [
+      "Beyaz",
+      "Mavi",
+      "Mor",
+      "Turuncu",
+      "Sarı",
+      "Pembe"
+    ],
+    "images": [
+      "images/sculpture-11-1.jpg",
+      "images/sculpture-11-2.jpg"
+    ],
+    "dimensions": "8 cm x 8 cm"
+  },
+  {
+    "id": 14,
+    "name": "Sculpture & Form · Bubble Küp Mum",
+    "category": "Sculpture & Form",
+    "price": 250,
+    "stock": 40,
+    "feature": "İs yapmayan özel doğal fitil, toksik madde içermez vegandır.",
+    "description": "Sanat ve estetiğin alevle buluşması. Ev dekorasyonunuza zamansız ve modern bir dokunuş katan el yapımı figüratif %100 doğal soya mumları.",
+    "notes": "",
+    "specs": "150g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
+    "colors": [
+      "Pembe",
+      "Sarı",
+      "Mavi",
+      "Mor",
+      "Beyaz",
+      "Yeşil"
+    ],
+    "images": [
+      "images/sculpture-12-1.jpg",
+      "images/sculpture-12-2.jpg"
+    ],
+    "dimensions": "6 cm x 6 cm"
+  },
+  {
+    "id": 15,
+    "name": "Woodfire (Odun Ateşi)",
+    "category": "Woodfire",
+    "price": 480,
+    "stock": 50,
+    "feature": "Vanilya ve sandal ağacı notalarıyla, ahşap fitilli klasik amber çam mumu — Çıtırtılı Ahşap Fitil (Wooden Wick) & Amber Cam Kavanoz",
+    "description": "Vanilya ve sandal ağacının sıcak dokunuşu, ahşap fitilin huzur veren çıtırtısıyla birleşti. Şömine sıcaklığında bir akşam deneyimi.",
+    "notes": "Tatlı Vanilya, Sandal Ağacı, Amber",
+    "specs": "250g %100 Doğal Soya Wax | Çıtırtılı Ahşap Fitil",
+    "colors": [
+      "Beyaz",
+      "Turuncu",
+      "Kahverengi"
+    ],
+    "images": [
+      "images/woodfire-1.jpg",
+      "images/woodfire-2.jpg"
+    ],
+    "colorTargetId": {
+      "Beyaz": 15,
+      "Turuncu": 19,
+      "Kahverengi": 20
+    },
+    "burnTime": "Yaklaşık 45 saat"
+  },
+  {
+    "id": 19,
+    "name": "Woodfire (Odun Ateşi) · Tarçın & Kehribar",
+    "category": "Woodfire",
+    "price": 480,
+    "stock": 45,
+    "feature": "Sıcak baharat ve kehribar dokunuşlu, ahşap fitilli amber cam mum — Çıtırtılı Ahşap Fitil (Wooden Wick) & Amber Cam Kavanoz",
+    "description": "Sıcak baharat ve kehribar notalarının derinliği, ahşap fitilin huzur veren çıtırtısıyla buluştu. Akşam saatlerine özel sıcak atmosfer.",
+    "notes": "Tarçın Kabuğu, Kehribar, Sedir",
+    "specs": "250g %100 Doğal Soya Wax | Çıtırtılı Ahşap Fitil",
+    "colors": [
+      "Beyaz",
+      "Turuncu",
+      "Kahverengi"
+    ],
+    "colorTargetId": {
+      "Beyaz": 15,
+      "Turuncu": 19,
+      "Kahverengi": 20
+    },
+    "images": [
+      "images/woodfire-cinnamon-amber.png",
+      "images/woodfire-cinnamon-amber.png"
+    ],
+    "burnTime": "Yaklaşık 45 saat"
+  },
+  {
+    "id": 20,
+    "name": "Woodfire (Odun Ateşi) · Tütsü & Kavrulmuş Meşe",
+    "category": "Woodfire",
+    "price": 480,
+    "stock": 45,
+    "feature": "Kavrulmuş meşe ve reçine notalı, ahşap fitilli amber cam mum — Çıtırtılı Ahşap Fitil (Wooden Wick) & Amber Cam Kavanoz",
+    "description": "Kavrulmuş meşe ve hafif reçine dokunuşları, ahşap fitilin doğal çıtırtısıyla yaşam alanınıza sakin ve sıcak bir derinlik katar.",
+    "notes": "Kavrulmuş Meşe, Reçine, Vanilya",
+    "specs": "250g %100 Doğal Soya Wax | Çıtırtılı Ahşap Fitil",
+    "colors": [
+      "Beyaz",
+      "Turuncu",
+      "Kahverengi"
+    ],
+    "colorTargetId": {
+      "Beyaz": 15,
+      "Turuncu": 19,
+      "Kahverengi": 20
+    },
+    "images": [
+      "images/woodfire-smoked-oak.png",
+      "images/woodfire-smoked-oak.png"
+    ],
+    "burnTime": "Yaklaşık 45 saat"
+  },
+  {
+    "id": 16,
+    "name": "Candle Making Kit (Evde Mum Yapım Kiti)",
+    "category": "Candle Making Kit",
+    "price": 1200,
+    "stock": 25,
+    "feature": "Kendi ışığını kendin yarat — Kutu İçeriği: Premium Soya Wax, Doğal Esans Şişesi, Cam Mum Kabı, Pamuk Fitiller, Fitil Tutucu ve Adım Adım Yapım Kılavuzu.",
+    "description": "Kendi doğal mumunuzu kendi ellerinizle tasarlayın! İhtiyacınız olan tüm malzemeler ve adım adım rehber bu kutuda. Candle Making Kit, sizi sadece bir tüketici değil, kendi mumunun zanaatkarı yapmaya davet ediyor. İçerisindeki %100 doğal soya waxı, özel koku esansları, fitil ve cam kabı ile evinizde keyifli bir atölye deneyimi yaşayın. İster kendinize bir hobi alanı yaratın, ister sevdiklerinize el emeği bir hediye hazırlayın.",
+    "notes": "",
+    "specs": "500g Premium Soya Wax, 30ml Doğal Esans Şişesi, Cam Mum Kabı, Pamuk Fitiller, Fitil Tutucu & Yapım Kılavuzu",
+    "colors": [],
+    "images": [
+      "images/candle-making-kit-1.jpg",
+      "images/candle-making-kit-2.jpg"
+    ],
+    "originalPrice": 1800
+  },
+  {
+    "id": 17,
+    "name": "Candle Care Kit (Mum Bakım Kiti)",
+    "category": "Candle Care Kit",
+    "price": 550,
+    "stock": 30,
+    "feature": "Mat Siyah Paslanmaz Çelik Fitil Kesici, Mum Söndürücü & Fitil Düzeltici Seti — Faydası: Mumun ömrünü %30 artırır, is oluşumunu engeller.",
+    "description": "Mumlarınızın ömrünü uzatan profesyonel 3'lü paslanmaz çelik bakım seti. Mat siyah fitil kesici, mum söndürücü ve fitil düzeltici bir arada.",
+    "notes": "",
+    "specs": "Mat Siyah Paslanmaz Çelik Fitil Kesici & Mat siyah paslanmaz çelik mum söndürücü & Mat siyah paslanmaz çelik fitil düzeltici | Mum Ömrünü %30 Artırır",
+    "colors": [],
+    "images": [
+      "images/candle-care-kit-1.jpg",
+      "images/candle-care-kit-2.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Cam Kibritlik",
+    "category": "Candle Care Kit",
+    "price": 150,
+    "stock": 30,
+    "feature": "Evinize şık bir obje — Mum bakım ve aydınlatma tamamlayıcısı",
+    "description": "Mumlarınızın ömrünü uzatan profesyonel bakım serisinin şık cam kibritlik parçası.",
+    "notes": "",
+    "specs": "Özel Tasarım Cam Kibritlik & Kibritler",
+    "colors": [],
+    "images": [
+      "images/cam-kibritlik-1.jpg",
+      "images/cam-kibritlik-2.jpg"
+    ]
+  }
+];
+
+
+// --- SOSYAL MEDYA UYGULAMA YÖNLENDİRME ---
+function openSocialApp(ev, appScheme, webUrl){
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if(isMobile){
+    ev.preventDefault();
+    const start = Date.now();
+    window.location.href = appScheme;
+    setTimeout(() => {
+      if(Date.now() - start < 1800){
+        window.open(webUrl, "_blank", "noopener,noreferrer");
+      }
+    }, 900);
+  }
+}
+
+// --- KODSUZ DOĞRUDAN FOTOĞRAF YÖNETİMİ (INDEXEDDB + LOCALSTORAGE) ---
+let customProductImages = {}; // { [productId]: [dataUrl1, dataUrl2, ...] }
+
+function openPhotoDB(){
+  return new Promise((resolve, reject) => {
+    if(!window.indexedDB){ resolve(null); return; }
+    const req = indexedDB.open("odnature-media-db", 1);
+    req.onupgradeneeded = e => {
+      const db = e.target.result;
+      if(!db.objectStoreNames.contains("productPhotos")){
+        db.createObjectStore("productPhotos");
+      }
+    };
+    req.onsuccess = e => resolve(e.target.result);
+    req.onerror = () => resolve(null);
+  });
+}
+
+async function loadCustomPhotos(){
+  try {
+    const db = await openPhotoDB();
+    if(db){
+      await new Promise(resolve => {
+        const tx = db.transaction("productPhotos", "readonly");
+        const store = tx.objectStore("productPhotos");
+        const req = store.get("all_photos");
+        req.onsuccess = () => {
+          if(req.result && typeof req.result === "object") customProductImages = req.result;
+          resolve();
+        };
+        req.onerror = () => resolve();
+      });
+    } else {
+      const raw = localStorage.getItem("odnature-custom-photos");
+      if(raw) customProductImages = JSON.parse(raw);
+    }
+  } catch(e){}
+  renderProducts();
+}
+
+async function saveCustomPhotos(){
+  try {
+    const db = await openPhotoDB();
+    if(db){
+      await new Promise(resolve => {
+        const tx = db.transaction("productPhotos", "readwrite");
+        tx.objectStore("productPhotos").put(customProductImages, "all_photos");
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => resolve();
+      });
+    } else {
+      localStorage.setItem("odnature-custom-photos", JSON.stringify(customProductImages));
+    }
+  } catch(e){}
+}
+
+function getProductImages(p){
+  const custom = customProductImages[p.id];
+  if(Array.isArray(custom) && custom.length > 0) return custom;
+  return (p.images && p.images.length) ? p.images : ["images/aura-mint.jpeg"];
+}
+
+function compressImageFile(file, maxDim = 1100, quality = 0.84){
+  return new Promise(resolve => {
+    const reader = new FileReader();
+    reader.onload = ev => {
+      const img = new Image();
+      img.onload = () => {
+        let w = img.width, h = img.height;
+        if(w > maxDim || h > maxDim){
+          if(w > h){ h = Math.round(h * maxDim / w); w = maxDim; }
+          else { w = Math.round(w * maxDim / h); h = maxDim; }
+        }
+        const canvas = document.createElement("canvas");
+        canvas.width = w; canvas.height = h;
+        const ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0, w, h);
+        resolve(canvas.toDataURL("image/jpeg", quality));
+      };
+      img.onerror = () => resolve(ev.target.result);
+      img.src = ev.target.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+async function handleDirectPhotoUpload(productId, fileList, fromDetail = false){
+  if(!fileList || !fileList.length) return;
+  const existing = Array.isArray(customProductImages[productId]) ? [...customProductImages[productId]] : [];
+  for(const file of Array.from(fileList)){
+    if(!file.type.startsWith("image/")) continue;
+    const dataUrl = await compressImageFile(file);
+    existing.push(dataUrl);
+  }
+  customProductImages[productId] = existing;
+  await saveCustomPhotos();
+  renderProducts();
+  if(document.getElementById("photo-mgr-modal").classList.contains("open")){
+    renderPhotoManager();
+  }
+  if(fromDetail || document.getElementById("product-modal").classList.contains("open")){
+    openProductModal(productId);
+  }
+}
+
+async function deleteCustomPhoto(productId, index, fromDetail = false, focusProductId = null){
+  if(!Array.isArray(customProductImages[productId])) return;
+  customProductImages[productId].splice(index, 1);
+  if(customProductImages[productId].length === 0){
+    delete customProductImages[productId];
+  }
+  await saveCustomPhotos();
+  renderProducts();
+  if(document.getElementById("photo-mgr-modal").classList.contains("open")){
+    renderPhotoManager(focusProductId);
+  }
+  if(fromDetail || document.getElementById("product-modal").classList.contains("open")){
+    openProductModal(productId);
+  }
+}
+
+async function moveCustomPhoto(productId, index, delta, focusProductId = null){
+  if(!Array.isArray(customProductImages[productId])) return;
+  const arr = [...customProductImages[productId]];
+  const target = index + delta;
+  if(target < 0 || target >= arr.length) return;
+  const temp = arr[index];
+  arr[index] = arr[target];
+  arr[target] = temp;
+  customProductImages[productId] = arr;
+  await saveCustomPhotos();
+  renderProducts();
+  if(document.getElementById("photo-mgr-modal").classList.contains("open")){
+    renderPhotoManager(focusProductId);
+  }
+}
+
+async function setCoverCustomPhoto(productId, index, focusProductId = null){
+  if(!Array.isArray(customProductImages[productId])) return;
+  if(index <= 0 || index >= customProductImages[productId].length) return;
+  const arr = [...customProductImages[productId]];
+  const [chosen] = arr.splice(index, 1);
+  arr.unshift(chosen);
+  customProductImages[productId] = arr;
+  await saveCustomPhotos();
+  renderProducts();
+  if(document.getElementById("photo-mgr-modal").classList.contains("open")){
+    renderPhotoManager(focusProductId);
+  }
+}
+
+async function resetProductPhotos(productId){
+  delete customProductImages[productId];
+  await saveCustomPhotos();
+  renderProducts();
+  renderPhotoManager();
+}
+
+function openPhotoManagerModal(focusProductId = null){
+  renderPhotoManager(focusProductId);
+  document.getElementById("photo-mgr-modal").classList.add("open");
+}
+
+function closePhotoManagerModal(){
+  document.getElementById("photo-mgr-modal").classList.remove("open");
+}
+
+async function exportAllSitePhotos(){
+  const payload={format:"odnature-photo-backup",version:1,productPhotos:customProductImages||{},sectionPhotos:sectionPhotos||{}};
+  const blob=new Blob([JSON.stringify(payload)],{type:"application/json"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");a.href=url;a.download="odnature-fotograf-yedegi.json";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+}
+async function importAllSitePhotos(file){
+  if(!file)return;
+  try{
+    const payload=JSON.parse(await file.text());
+    if(payload.format!=="odnature-photo-backup" || !payload.productPhotos || typeof payload.productPhotos!=="object"){
+      alert("Bu dosya OD&NATURE fotoğraf yedeği değil.");return;
+    }
+    customProductImages=payload.productPhotos;
+    sectionPhotos=payload.sectionPhotos && typeof payload.sectionPhotos==="object" ? payload.sectionPhotos : {};
+    await saveCustomPhotos();saveSectionPhotos();
+    renderProducts();renderCollections();renderStoryPhoto();renderHeroPhoto();renderPhotoManager();
+    alert("Fotoğraflar bu cihaza aktarıldı.");
+  }catch(e){alert("Fotoğraf yedeği okunamadı. Lütfen doğru JSON dosyasını seçin.");}
+}
+function closeMobileNav(){const nav=document.getElementById("main-navigation");if(nav)nav.classList.remove("show");}
+function toggleMobileNav(){const nav=document.getElementById("main-navigation");if(nav)nav.classList.toggle("show");}
+
+function renderPhotoManager(focusProductId = null){
+  const el = document.getElementById("photo-mgr-content");
+  const list = focusProductId ? products.filter(p => p.id === focusProductId) : products;
+  el.innerHTML = `
+    <div class="eyebrow">KODSUZ GÖRSEL YÖNETİMİ</div>
+    <h2>${focusProductId ? 'Ürün Fotoğraflarını Yönet' : 'Tüm Ürünlere Fotoğraf Ekle'}</h2>
+    <p class="empty" style="padding:4px 0 12px">Bilgisayarınızdan veya telefonunuzdan birden fazla fotoğraf seçip doğrudan ekleyebilirsiniz. Yüklediğiniz fotoğraflar tarayıcınıza otomatik kaydedilir ve ürün kartlarında Trendyol gibi yana kaydırmalı görünür.</p>
+    <div class="policy-note">Önemli: Fotoğraflar şu anda eklendikleri tarayıcıya/cihaza kaydedilir. Bilgisayardaki fotoğrafları telefonda da göstermek için aşağıdan yedek dosyasını bilgisayarda indirin, telefona gönderin ve bu ekrandan içe aktarın.</div>
+    <div class="photo-transfer-tools"><button type="button" onclick="exportAllSitePhotos()">Fotoğrafları dışa aktar</button><label>Fotoğraf yedeğini içe aktar<input type="file" accept="application/json,.json" onchange="importAllSitePhotos(this.files[0]);this.value=''"></label></div>
+    ${focusProductId ? `<div style="margin-bottom:12px"><button type="button" class="link-btn" onclick="renderPhotoManager(null)">← Tüm Ürünleri Göster</button></div>` : ''}
+    <div class="photo-mgr-grid">
+      ${list.map(p => {
+        const customList = Array.isArray(customProductImages[p.id]) ? customProductImages[p.id] : [];
+        const activeImgs = getProductImages(p);
+        const focusArg = focusProductId != null ? focusProductId : 'null';
+        return `<div class="photo-mgr-item">
+          <div class="photo-mgr-head">
+            <div>
+              <div class="series-label" style="margin:0">${p.category}</div>
+              <strong style="font-size:16px;font-weight:400">${p.name}</strong>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+              <label class="upload-label">
+                + Fotoğraf Seç (Çoklu)
+                <input type="file" accept="image/*" multiple onchange="handleDirectPhotoUpload(${p.id}, this.files)">
+              </label>
+              ${customList.length ? `<button type="button" class="link-btn" onclick="resetProductPhotos(${p.id})">Varsayılana Dön</button>` : ''}
+            </div>
+          </div>
+          <div class="photo-mgr-thumbs">
+            ${customList.length
+              ? customList.map((src, i) => `
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+                  <div class="photo-mgr-thumb-box">
+                    <img src="${src}" alt="${p.name} ${i+1}">
+                    <button type="button" class="photo-mgr-del" title="Fotoğrafı Sil" onclick="deleteCustomPhoto(${p.id}, ${i}, false, ${focusArg})">×</button>
+                  </div>
+                  <div style="display:flex;gap:3px;align-items:center">
+                    <button type="button" class="link-btn" style="padding:2px 4px;font-size:11px;${i===0?'opacity:.35;pointer-events:none':''}" title="Sola Taşı" onclick="moveCustomPhoto(${p.id}, ${i}, -1, ${focusArg})">←</button>
+                    <button type="button" class="link-btn" style="padding:2px 4px;font-size:11px;${i===customList.length-1?'opacity:.35;pointer-events:none':''}" title="Sağa Taşı" onclick="moveCustomPhoto(${p.id}, ${i}, 1, ${focusArg})">→</button>
+                    ${i>0 ? `<button type="button" class="link-btn" style="padding:2px 4px;font-size:10px" title="1. Sıraya (Kapak) Al" onclick="setCoverCustomPhoto(${p.id}, ${i}, ${focusArg})">Kapak</button>` : `<span style="font:10px Arial,sans-serif;color:var(--olive)">1.</span>`}
+                  </div>
+                </div>`).join("")
+              : activeImgs.map((src, i) => `
+                <div class="photo-mgr-thumb-box" title="Klasördeki varsayılan dosya: ${src}">
+                  <img src="${src}" alt="${p.name}" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-missing');this.parentElement.setAttribute('data-placeholder','Fotoğraf bu cihazda kayıtlı değil')">
+                </div>`).join("") + `<span style="font:11.5px Arial,sans-serif;color:var(--muted)">Henüz özel fotoğraf yüklenmedi (çoklu seçim yapabilirsiniz)</span>`
+            }
+          </div>
+        </div>`;
+      }).join("")}
+    </div>
+  `;
+}
+
+// --- TRENDYOL TARZI YANA KAYDIRMALI SLIDER FONKSİYONLARI ---
+function stepCarousel(trackId, dir, ev){
+  if(ev) ev.stopPropagation();
+  const track = document.getElementById(trackId);
+  if(!track) return;
+  const w = track.clientWidth || 1;
+  const total = track.children.length;
+  const currentIdx = Math.round(track.scrollLeft / w);
+  const nextIdx = (currentIdx + dir + total) % total;
+  track.scrollTo({ left: nextIdx * w, behavior: "smooth" });
+}
+
+function goToCarouselSlide(trackId, idx, ev){
+  if(ev) ev.stopPropagation();
+  const track = document.getElementById(trackId);
+  if(!track) return;
+  const w = track.clientWidth || 1;
+  track.scrollTo({ left: idx * w, behavior: "smooth" });
+}
+
+function syncCarouselDots(trackEl, dotsId){
+  const dotsWrap = document.getElementById(dotsId);
+  if(!dotsWrap || !trackEl) return;
+  const w = trackEl.clientWidth || 1;
+  const idx = Math.round(trackEl.scrollLeft / w);
+  dotsWrap.querySelectorAll(".carousel-dot").forEach((d, i) => {
+    d.classList.toggle("active", i === idx);
+  });
+  if(dotsId === "detail-carousel-dots"){
+    document.querySelectorAll(".detail-thumb").forEach((t, i) => {
+      t.classList.toggle("active", i === idx);
+    });
+  }
+}
+
+let currentFilter = "Tümü";
+let selectedColorByProduct = {};
+let cart = JSON.parse(localStorage.getItem("odnature-cart") || "[]").filter(x => products.some(p => p.id === x.id && p.price != null));
+let favorites = JSON.parse(localStorage.getItem("odnature-favorites") || "[]").filter(id => products.some(p => p.id === id));
+let usersDb = JSON.parse(localStorage.getItem("odnature-users") || "[]");
+let currentUser = JSON.parse(localStorage.getItem("odnature-current-user") || "null");
+
+function saveFavorites(){
+  localStorage.setItem("odnature-favorites", JSON.stringify(favorites));
+  const badge = document.getElementById("fav-count");
+  if(badge) badge.textContent = favorites.length;
+}
+
+function isFavorite(id){
+  return favorites.includes(id);
+}
+
+function toggleFavorite(id, ev){
+  if(ev) ev.stopPropagation();
+  if(isFavorite(id)){
+    favorites = favorites.filter(x => x !== id);
+  } else {
+    favorites.push(id);
+  }
+  saveFavorites();
+  renderProducts();
+  const detailBtn = document.getElementById("detail-fav-btn");
+  if(detailBtn && Number(detailBtn.dataset.pid) === id){
+    detailBtn.textContent = isFavorite(id) ? "♥ FAVORİLERDE" : "♡ FAVORİLERE EKLE";
+  }
+  if(document.getElementById("fav-modal").classList.contains("open")){
+    renderFavorites();
+  }
+}
+
+function renderFavorites(){
+  const el = document.getElementById("fav-content");
+  if(!favorites.length){
+    el.innerHTML = `<div class="eyebrow">FAVORİ LİSTEM</div><h2>Favorilerim</h2><p class="empty">Henüz favorilerinize ürün eklemediniz. Beğendiğiniz mumların üzerindeki kalp simgesine tıklayarak buraya ekleyebilirsiniz.</p>`;
+    return;
+  }
+  el.innerHTML = `<div class="eyebrow">FAVORİ LİSTEM</div><h2>Favorilerim (${favorites.length})</h2>` + favorites.map(id => {
+    const p = products.find(pr => pr.id === id);
+    if(!p) return "";
+    const img = (p.images && p.images[0]) || "";
+    return `<div class="fav-row">
+      <div class="fav-row-left">
+        <img src="${img}" alt="${p.name}" onerror="this.style.opacity=0">
+        <div>
+          <div style="font-size:16px">${p.name}</div>
+          <div style="font:12px Arial,sans-serif;color:var(--muted)">${money(p.price)}</div>
+        </div>
+      </div>
+      <div class="fav-row-actions">
+        <button onclick="closeFavoritesModal();addToCart(${p.id})">Sepete Ekle</button>
+        <button onclick="toggleFavorite(${p.id})">Kaldır</button>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function openFavoritesModal(){
+  renderFavorites();
+  document.getElementById("fav-modal").classList.add("open");
+}
+function closeFavoritesModal(){
+  document.getElementById("fav-modal").classList.remove("open");
+}
+
+function updateHeaderAccount(){
+  const btn = document.getElementById("header-account-btn");
+  if(!btn) return;
+  if(currentUser){
+    const firstName = currentUser.name.split(" ")[0].toUpperCase();
+    btn.textContent = firstName;
+    btn.onclick = () => openAuthModal("profile");
+  } else {
+    btn.textContent = "GİRİŞ YAP";
+    btn.onclick = () => openAuthModal("login");
+  }
+}
+
+function openAuthModal(tab = "login"){
+  const el = document.getElementById("auth-content");
+  if(currentUser && tab === "profile"){
+    el.innerHTML = `
+      <div class="eyebrow">HESABIM</div>
+      <h2>Hoş geldiniz, ${currentUser.name}</h2>
+      <div class="notice"><b>E-posta:</b> ${currentUser.email}<br><b>Telefon:</b> ${currentUser.phone || "Belirtilmedi"}<br><b>Favori Ürün Sayısı:</b> ${favorites.length}</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn" onclick="closeAuthModal();openFavoritesModal()">FAVORİLERİME GİT</button>
+        <button class="btn-outline" onclick="logoutUser()">ÇIKIŞ YAP</button>
+      </div>
+    `;
+    document.getElementById("auth-modal").classList.add("open");
+    return;
+  }
+
+  const tabsHtml = `
+    <div class="auth-tabs">
+      <button type="button" class="auth-tab ${tab==='login'?'active':''}" onclick="openAuthModal('login')">Giriş Yap</button>
+      <button type="button" class="auth-tab ${tab==='register'?'active':''}" onclick="openAuthModal('register')">Kayıt Ol</button>
+      <button type="button" class="auth-tab ${tab==='forgot'?'active':''}" onclick="openAuthModal('forgot')">Şifremi Unuttum</button>
+    </div>
+  `;
+
+  if(tab === "register"){
+    el.innerHTML = `
+      <div class="eyebrow">OD&amp;NATURE ÜYELİK</div>
+      <h2>Kayıt Ol</h2>
+      ${tabsHtml}
+      <div class="checkout-fields">
+        <input id="reg-name" placeholder="Ad Soyad">
+        <input id="reg-email" type="email" placeholder="E-posta Adresi">
+        <input id="reg-phone" type="tel" placeholder="Telefon Numarası (5XX XXX XX XX)">
+        <input id="reg-pass" type="password" placeholder="Şifre Oluşturun">
+      </div>
+      <button class="btn pay-btn" onclick="registerUser()">KAYIT OL</button>
+    `;
+  } else if(tab === "forgot"){
+    el.innerHTML = `
+      <div class="eyebrow">HESAP KURTARMA</div>
+      <h2>Şifremi Unuttum</h2>
+      ${tabsHtml}
+      <p class="empty" style="padding:0 0 12px">Kayıtlı e-posta adresinizi girin, şifre yenileme bağlantısını gönderelim.</p>
+      <div class="checkout-fields">
+        <input id="forgot-email" type="email" placeholder="E-posta Adresi">
+      </div>
+      <button class="btn pay-btn" onclick="recoverPassword()">ŞİFRE YENİLEME BAĞLANTISI GÖNDER</button>
+    `;
+  } else {
+    el.innerHTML = `
+      <div class="eyebrow">OD&amp;NATURE ÜYELİK</div>
+      <h2>Giriş Yap</h2>
+      ${tabsHtml}
+      <div class="checkout-fields">
+        <input id="login-email" type="email" placeholder="E-posta Adresi">
+        <input id="login-pass" type="password" placeholder="Şifre">
+      </div>
+      <button class="btn pay-btn" onclick="loginUser()">GİRİŞ YAP</button>
+    `;
+  }
+  document.getElementById("auth-modal").classList.add("open");
+}
+
+function closeAuthModal(){
+  document.getElementById("auth-modal").classList.remove("open");
+}
+
+function registerUser(){
+  const name = document.getElementById("reg-name").value.trim();
+  const email = document.getElementById("reg-email").value.trim().toLowerCase();
+  const phone = document.getElementById("reg-phone").value.trim();
+  const pass = document.getElementById("reg-pass").value;
+  if(!name || !email || !pass){
+    alert("Lütfen ad soyad, e-posta ve şifre alanlarını doldurun.");
+    return;
+  }
+  if(usersDb.some(u => u.email === email)){
+    alert("Bu e-posta adresi ile zaten bir üyelik mevcut. Giriş yapabilirsiniz.");
+    openAuthModal("login");
+    return;
+  }
+  const newUser = { name, email, phone, pass };
+  usersDb.push(newUser);
+  localStorage.setItem("odnature-users", JSON.stringify(usersDb));
+  currentUser = { name, email, phone };
+  localStorage.setItem("odnature-current-user", JSON.stringify(currentUser));
+  updateHeaderAccount();
+  if(returnToCheckoutAfterAuth){
+    returnToCheckoutAfterAuth = false;
+    closeAuthModal();
+    openCheckout();
+  } else {
+    openAuthModal("profile");
+  }
+}
+
+function loginUser(){
+  const email = document.getElementById("login-email").value.trim().toLowerCase();
+  const pass = document.getElementById("login-pass").value;
+  if(!email || !pass){
+    alert("Lütfen e-posta ve şifrenizi girin.");
+    return;
+  }
+  const found = usersDb.find(u => u.email === email && u.pass === pass);
+  if(!found){
+    alert("E-posta veya şifre hatalı. Henüz hesabınız yoksa Kayıt Ol sekmesinden ücretsiz üye olabilirsiniz.");
+    return;
+  }
+  currentUser = { name: found.name, email: found.email, phone: found.phone || "" };
+  localStorage.setItem("odnature-current-user", JSON.stringify(currentUser));
+  updateHeaderAccount();
+  if(returnToCheckoutAfterAuth){
+    returnToCheckoutAfterAuth = false;
+    closeAuthModal();
+    openCheckout();
+  } else {
+    openAuthModal("profile");
+  }
+}
+
+let pendingResetEmail = "";
+let generatedResetCode = "";
+
+function sendResetMailCode(email){
+  generatedResetCode = String(Math.floor(100000 + Math.random() * 900000));
+  const mailtoUrl = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent("OD&NATURE - Şifre Yenileme Kodu")}&body=${encodeURIComponent("Merhaba,\n\nOD&NATURE hesabınız için şifre yenileme doğrulama kodunuz: " + generatedResetCode + "\n\nBu kodu ekranınızdaki alana girerek yeni şifrenizi belirleyebilirsiniz.")}`;
+  const statusEl = document.getElementById("reset-mail-status");
+  if(statusEl){
+    statusEl.innerHTML = `<b>${email}</b> adresine şifre sıfırlama kodu gönderildi. (Doğrulama Kodu: <b>${generatedResetCode}</b>) • <a href="${mailtoUrl}" style="text-decoration:underline;color:var(--ink)">E-posta Uygulamasında Aç</a>`;
+  }
+}
+
+function recoverPassword(){
+  const email = document.getElementById("forgot-email").value.trim().toLowerCase();
+  if(!email){
+    alert("Lütfen e-posta adresinizi yazın.");
+    return;
+  }
+  pendingResetEmail = email;
+  document.getElementById("auth-content").innerHTML = `
+    <div class="eyebrow">HESAP KURTARMA • E-POSTA DOĞRULAMA</div>
+    <h2>Yeni Şifre Belirle</h2>
+    <p class="empty" style="padding:0 0 10px"><b>${email}</b> adresine gönderilen 6 haneli doğrulama kodunu ve yeni şifrenizi girin.</p>
+    <div id="reset-mail-status" class="notice" style="margin:0 0 14px"></div>
+    <div class="checkout-fields">
+      <input id="reset-code-input" inputmode="numeric" maxlength="6" placeholder="6 Haneli E-posta Doğrulama Kodu" style="letter-spacing:3px">
+      ${passwordInputHtml("reset-new-pass", "Yeni Şifreniz")}
+      ${passwordInputHtml("reset-new-pass-confirm", "Yeni Şifre (Tekrar)")}
+    </div>
+    <button class="btn pay-btn" onclick="confirmPasswordReset()">ŞİFREMİ GÜNCELLE</button>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;flex-wrap:wrap;gap:8px">
+      <button type="button" class="link-btn" onclick="sendResetMailCode(pendingResetEmail)">Kodu Tekrar Gönder</button>
+      <button type="button" class="link-btn" onclick="openAuthModal('forgot')">E-posta Adresini Değiştir</button>
+    </div>
+  `;
+  sendResetMailCode(email);
+}
+
+function confirmPasswordReset(){
+  const code = document.getElementById("reset-code-input").value.trim();
+  const newPass = document.getElementById("reset-new-pass").value;
+  const confirmPass = document.getElementById("reset-new-pass-confirm").value;
+
+  if(!code || code.length < 4){
+    alert("Lütfen e-postanıza gönderilen doğrulama kodunu girin.");
+    return;
+  }
+  if(generatedResetCode && code !== generatedResetCode){
+    alert("Doğrulama kodu hatalı. Lütfen kontrol edin veya kodu tekrar gönderin.");
+    return;
+  }
+  if(!newPass || newPass.length < 4){
+    alert("Lütfen en az 4 karakterli yeni bir şifre belirleyin.");
+    return;
+  }
+  if(newPass !== confirmPass){
+    alert("Girdiğiniz şifreler birbiriyle eşleşmiyor.");
+    return;
+  }
+
+  let userIdx = usersDb.findIndex(u => (u.email || "").toLowerCase() === pendingResetEmail);
+  if(userIdx !== -1){
+    usersDb[userIdx].pass = newPass;
+  } else {
+    const fallbackName = pendingResetEmail.split("@")[0] || "Kullanıcı";
+    usersDb.push({ name: fallbackName, email: pendingResetEmail, phone: "", pass: newPass });
+  }
+  localStorage.setItem("odnature-users", JSON.stringify(usersDb));
+
+  if(currentUser && (currentUser.email || "").toLowerCase() === pendingResetEmail){
+    localStorage.setItem("odnature-current-user", JSON.stringify(currentUser));
+  }
+
+  const doneEmail = pendingResetEmail;
+  pendingResetEmail = "";
+  generatedResetCode = "";
+
+  document.getElementById("auth-content").innerHTML = `
+    <div class="eyebrow">HESAP KURTARMA</div>
+    <h2>Şifreniz Güncellendi</h2>
+    <p class="empty"><b>${doneEmail}</b> hesabı için şifreniz başarıyla yenilendi. Artık yeni şifrenizle giriş yapabilirsiniz.</p>
+    <button class="btn" onclick="openAuthModal('login')">GİRİŞ EKRANINA DÖN</button>
+  `;
+}
+
+function logoutUser(){
+  currentUser = null;
+  localStorage.removeItem("odnature-current-user");
+  updateHeaderAccount();
+  closeAuthModal();
+}
+
+function openFaqModal(){
+  document.getElementById("info-content").innerHTML = `
+    <div class="eyebrow">YARDIM MERKEZİ</div><h2>Sıkça Sorulan Sorular</h2>
+    <div class="faq-item"><h4>Ürünler hangi malzemelerden hazırlanıyor?</h4><p>Ürünlerin içerik ve malzeme bilgileri her ürünün detay sayfasında belirtilir. Satın almadan önce ilgili ürünün açıklamasını ve özelliklerini inceleyebilirsiniz.</p></div>
+    <div class="faq-item"><h4>Mumumu ilk kullanımda nasıl yakmalıyım?</h4><p>İlk kullanımda mumun üst yüzeyinin mümkün olduğunca dengeli erimesini bekleyin. Her yakıştan önce fitili ürünün kullanım talimatına uygun şekilde kısaltın ve mumu gözetimsiz bırakmayın.</p></div>
+    <div class="faq-item"><h4>Mumumu nasıl muhafaza etmeliyim?</h4><p>Mumları doğrudan güneş ışığından, aşırı sıcaklıktan ve çocukların/evcil hayvanların erişebileceği alanlardan uzak tutun. Düz ve ısıya dayanıklı bir yüzeyde kullanın.</p></div>
+    <div class="faq-item"><h4>Siparişim ne zaman kargoya verilir?</h4><p>Siparişler 1-3 iş günü içinde kargoya teslim edilir. Yoğunluk veya resmî tatiller bu süreyi etkileyebilir.</p></div>
+    <div class="faq-item"><h4>Kargo ücreti ne kadar?</h4><p>1.500 TL ve üzeri siparişlerde kargo ücretsizdir. Bu tutarın altındaki siparişlerde ücret, ödeme öncesinde sepet/teslimat özetinde gösterilir.</p></div>
+    <div class="faq-item"><h4>Ürünümü iade veya değişim yapabilir miyim?</h4><p>İade ve değişim koşullarını İade ve Değişim bölümünden inceleyebilirsiniz. Talep oluşturmak için sipariş bilgilerinizle iletişim kanallarımızdan bize ulaşabilirsiniz.</p></div>
+    <div class="faq-item"><h4>Siparişim veya ürünüm hakkında nasıl iletişim kurabilirim?</h4><p>İletişim bölümünde yer alan e-posta ve telefon üzerinden bize ulaşabilirsiniz. Bu iletişim bilgilerinin güncel olması gerekir.</p></div>
+  `;
+  document.getElementById("info-modal").classList.add("open");
+}
+
+function openReturnModal(){
+  document.getElementById("info-content").innerHTML = `
+    <div class="eyebrow">İADE VE DEĞİŞİM POLİTİKASI</div><h2>İade ve Değişim</h2>
+    <div class="faq-item"><h4>İade talebi nasıl oluşturulur?</h4><p>Sipariş numaranız ve talebinizle birlikte <b>info@odnature.com</b> adresine e-posta gönderebilir veya <b>0505 972 44 70</b> numaralı telefondan müşteri destek hattımızla iletişime geçebilirsiniz. İade süreci ve gönderim adresi tarafınıza detaylı olarak bildirilir.</p></div>
+    <div class="faq-item"><h4>İade süresi</h4><p>Mesafeli satış mevzuatı kapsamında teslimat tarihinden itibaren 14 gün içinde cayma hakkınızı kullanabilirsiniz. İade edilecek ürünlerin kullanılmamış, hasar görmemiş ve orijinal ambalajında eksiksiz olması gerekmektedir.</p></div>
+    <div class="faq-item"><h4>Üründe hasar veya eksik parça varsa ne yapmalıyım?</h4><p>Teslimat sırasında paketi kontrol edin. Hasarlı veya eksik ürün fark ederseniz fotoğraf çekerek sipariş numaranızla birlikte en kısa sürede bizimle iletişime geçin; gerekli inceleme yapılarak mağduriyetiniz giderilir.</p></div>
+    <div class="faq-item"><h4>Ürün değişimi</h4><p>Değişim talepleri stok durumuna ve ürünün kullanılabilir ve açılmamış olmasına göre değerlendirilir. Değişim işlemini başlatmak için önce müşteri hizmetlerimizle iletişime geçerek yönlendirme alabilirsiniz.</p></div>
+  `;
+  document.getElementById("info-modal").classList.add("open");
+}
+function openShippingModal(){
+  document.getElementById("info-content").innerHTML=`
+    <div class="eyebrow">SİPARİŞ BİLGİLERİ</div><h2>Kargo ve Teslimat</h2>
+    <div class="policy-content">
+      <h3>Hazırlık ve kargoya teslim</h3><p>Siparişleriniz 1–3 iş günü içinde özenle hazırlanarak kargoya teslim edilir. Resmî tatiller ve yoğun dönemlerde hazırlık süresinde değişiklik olabilir.</p>
+      <h3>Kargo ücreti</h3><p>1.500 TL ve üzerindeki siparişlerde kargo ücretsizdir. 1.500 TL altındaki siparişlerde geçerli kargo ücreti, ödeme adımından önce sepet ve teslimat özetinde açıkça gösterilir.</p>
+      <h3>Teslimat takibi</h3><p>Siparişiniz kargoya verildiğinde taşıyıcı firma ve takip bilgileri paylaşılır. Teslimat süresi kargo firmasının operasyon hızına ve teslimat adresinin uzaklığına göre değişir.</p>
+      <h3>Hasarlı teslimat</h3><p>Kargo paketinizde ezilme, ıslanma veya açılma gibi gözle görülür bir hasar varsa teslimat sırasında kargo görevlisiyle birlikte kontrol sağlayın ve durumu fotoğraflayarak bizimle iletişime geçin.</p>
+    </div>`;
+  document.getElementById("info-modal").classList.add("open");
+}
+function openPrivacyModal(){
+  document.getElementById("info-content").innerHTML=`
+    <div class="eyebrow">KİŞİSEL VERİLERİN KORUNMASI</div><h2>KVKK ve Gizlilik Bilgilendirmesi</h2>
+    <div class="policy-content">
+      <p>OD&amp;NATURE web sitesi üzerinden paylaştığınız ad, soyad, iletişim, teslimat ve sipariş bilgileri; siparişlerin hazırlanması ve ulaştırılması, müşteri taleplerinin yanıtlanması ve satış sonrası destek hizmetlerinin yürütülmesi amacıyla 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında işlenir.</p>
+      <h3>İşlenen bilgiler</h3><p>Ad-soyad, telefon numarası, e-posta adresi, teslimat ve fatura adresi, sipariş detayları, müşteri destek talepleri ve site güvenliğine ilişkin teknik kayıtlar.</p>
+      <h3>Verilerin kullanımı ve paylaşımı</h3><p>Kişisel verileriniz yalnızca sipariş ve destek süreçlerinin yürütülmesi için gerekli olduğu ölçüde işlenir; kargo/teslimat operasyonları ve yasal yükümlülükler kapsamında yetkili hizmet sağlayıcıları ve resmi mercilerle paylaşılır.</p>
+      <h3>Veri sahibi başvuruları</h3><p>KVKK kapsamındaki bilgi talep etme, düzeltme, silme veya itiraz haklarınıza ilişkin başvurularınızı <b>info@odnature.com</b> adresi üzerinden veya <b>0505 972 44 70</b> numaralı hat aracılığıyla iletebilirsiniz.</p>
+    </div>`;
+  document.getElementById("info-modal").classList.add("open");
+}
+
+function openFeedbackModal(){
+  document.getElementById("info-content").innerHTML = `
+    <div class="eyebrow">MÜŞTERİ DENEYİMİ</div>
+    <h2>Şikayet ve Öneriler</h2>
+    <p class="empty" style="padding:0 0 12px">Görüşleriniz bizim için değerli. Mesajınızı bize doğrudan iletebilirsiniz.</p>
+    <div class="checkout-fields">
+      <input id="fb-name" placeholder="Adınız Soyadınız" value="${currentUser ? currentUser.name : ''}">
+      <input id="fb-email" type="email" placeholder="E-posta Adresiniz" value="${currentUser ? currentUser.email : ''}">
+      <textarea id="fb-msg" placeholder="Şikayet, öneri veya mesajınız..."></textarea>
+    </div>
+    <button class="btn pay-btn" onclick="submitFeedback()">MESAJI GÖNDER</button>
+  `;
+  document.getElementById("info-modal").classList.add("open");
+}
+
+function submitFeedback(){
+  const name = document.getElementById("fb-name").value.trim();
+  const msg = document.getElementById("fb-msg").value.trim();
+  if(!name || !msg){
+    alert("Lütfen adınızı ve mesajınızı yazın.");
+    return;
+  }
+  document.getElementById("info-content").innerHTML = `
+    <div class="eyebrow">OD&amp;NATURE</div>
+    <h2>Teşekkür Ederiz, ${name}!</h2>
+    <p class="empty">Geri bildiriminiz ekibimize ulaştı. En kısa sürede değerlendirip dönüş sağlayacağız.</p>
+    <button class="btn" onclick="closeInfoModal()">KAPAT</button>
+  `;
+}
+
+function closeInfoModal(){
+  document.getElementById("info-modal").classList.remove("open");
+}
+const money = n => new Intl.NumberFormat("tr-TR", { style: "currency", currency: "TRY", maximumFractionDigits: 0 }).format(n);
+
+function setFilter(category){
+  currentFilter = category;
+  renderProducts();
+  document.getElementById("product-filters").querySelectorAll("button").forEach(b => b.classList.toggle("active", b.dataset.category === category));
+}
+
+function renderFilters(){
+  const cats = ["Tümü","Aura","Sculpture & Form","Woodfire","Candle Making Kit","Candle Care Kit"];
+  document.getElementById("product-filters").innerHTML = cats.map(c => `<button class="filter-btn ${c===currentFilter?'active':''}" data-category="${c}" onclick="setFilter('${c}')">${c}</button>`).join("");
+}
+
+function switchDetailPhoto(idx, thumbEl){
+  goToCarouselSlide("detail-carousel-track", idx);
+  document.querySelectorAll(".detail-thumb").forEach(t => t.classList.remove("active"));
+  if(thumbEl) thumbEl.classList.add("active");
+}
+
+let lightboxImages = [];
+let lightboxIndex = 0;
+
+function openImageLightbox(images, startIndex = 0){
+  if(!images || !images.length) return;
+  lightboxImages = images;
+  lightboxIndex = startIndex;
+  updateLightboxView();
+  document.getElementById("image-lightbox").classList.add("open");
+}
+
+function updateLightboxView(){
+  const imgEl = document.getElementById("lightbox-img");
+  const prevBtn = document.getElementById("lightbox-prev");
+  const nextBtn = document.getElementById("lightbox-next");
+  if(imgEl) imgEl.src = lightboxImages[lightboxIndex];
+  const showNav = lightboxImages.length > 1 ? "flex" : "none";
+  if(prevBtn) prevBtn.style.display = showNav;
+  if(nextBtn) nextBtn.style.display = showNav;
+}
+
+function stepLightbox(delta, ev){
+  if(ev) ev.stopPropagation();
+  if(!lightboxImages.length) return;
+  lightboxIndex = (lightboxIndex + delta + lightboxImages.length) % lightboxImages.length;
+  updateLightboxView();
+}
+
+function closeImageLightbox(){
+  document.getElementById("image-lightbox").classList.remove("open");
+}
+
+document.addEventListener("keydown", (e) => {
+  const lb = document.getElementById("image-lightbox");
+  if(lb && lb.classList.contains("open")){
+    if(e.key === "Escape") closeImageLightbox();
+    if(e.key === "ArrowRight") stepLightbox(1);
+    if(e.key === "ArrowLeft") stepLightbox(-1);
+  }
+});
+
+function getDefaultColorForProduct(p){
+  if(!p || !p.colors || !p.colors.length) return "";
+  if(p.colorTargetId){
+    const matchedColor = Object.keys(p.colorTargetId).find(c => p.colorTargetId[c] === p.id);
+    if(matchedColor) return matchedColor;
+  }
+  return p.colors[0];
+}
+
+function selectColor(productId, color){
+  const p = products.find(x => x.id === productId);
+  if(!p) return;
+  if(p.colorTargetId && p.colorTargetId[color]){
+    const targetId = p.colorTargetId[color];
+    selectedColorByProduct[targetId] = color;
+    if(targetId !== productId){
+      openProductModal(targetId);
+      return;
+    }
+  }
+  selectedColorByProduct[productId] = color;
+  document.querySelectorAll(`.color-chip[data-pid="${productId}"]`).forEach(el => {
+    el.classList.toggle("selected", el.dataset.color === color);
+  });
+}
+
+function getDiscountPercent(p){
+  if(p && p.originalPrice && p.price != null && p.originalPrice > p.price){
+    return Math.round(((p.originalPrice - p.price) / p.originalPrice) * 100);
+  }
+  return 0;
+}
+
+function formatPriceHtml(p, isDetail = false){
+  if(p.price == null) return '<span class="pending">Fiyat ve satış bilgisi yakında</span>';
+  const pct = getDiscountPercent(p);
+  const oldCls = isDetail ? 'detail-old-price' : 'old-price';
+  const discTxt = pct > 0 ? ` <span style="color:#8c3227;font-weight:700;font-size:${isDetail?'13px':'11px'}">-%${pct}</span>` : '';
+  if(pct > 0){
+    return `<span class="${oldCls}">${money(p.originalPrice)}</span><span class="price">${money(p.price)}</span>${discTxt}`;
+  }
+  return `<span class="price">${money(p.price)}</span>`;
+}
+
+const productDescriptionOverrides={
+  1:"Okaliptüs ve çam notalarını bir araya getiren Aura Fresh, ferah ve temiz kokulardan hoşlananlar için tasarlandı. Amber/çam karakterli ürün açıklaması ve koku notaları ürün detaylarında yer alır.",
+  2:"Taze nane yaprakları ve hafif narenciye notalarıyla Aura Mint, ferah ve canlı bir koku profili sunar. Aura koleksiyonunun yalın ve taze karakterini yaşam alanınıza taşır.",
+  3:"Heykel figüründen ilham alan bu tasarım, dekoratif formuyla bulunduğu alanda dikkat çekici bir obje olarak öne çıkar. El yapımı görünümü ve sade çizgileriyle Sculpture & Form koleksiyonundadır.",
+  4:"Ayıcık formuyla sevimli ve yumuşak bir dekoratif görünüm sunar. Küçük detaylarıyla raf, komodin veya hediye sunumlarına eşlik edebilecek Sculpture & Form tasarımıdır.",
+  5:"Burgu formunun kıvrımlı çizgileriyle öne çıkan bu mum, modern ve heykelsi dekorasyonlardan hoşlananlar için tasarlanmıştır.",
+  6:"Fiyonk mumlukla birlikte sunulan burgu mum seti, farklı formları tek bir dekoratif kompozisyonda buluşturur. Renk seçenekleri ürün detaylarında gösterilir.",
+  7:"Hayalet figürlü tasarımıyla eğlenceli ve özgün bir dekoratif dokunuş sunar. Özellikle farklı figürlerden hoşlananlar için Sculpture & Form koleksiyonunda yer alır.",
+  8:"Kuğu formundan ilham alan zarif siluetiyle dekorasyona yumuşak ve şık bir detay ekler. Tek başına veya diğer heykelsi mumlarla birlikte sergilenebilir.",
+  9:"Katmanlı çam formu, doğadan ilham alan görünümüyle mevsimsel ve sıcak dekorasyonlara uyum sağlar.",
+  10:"Pastel tonlu üçlü burgu mum seti, farklı renkleri ve kıvrımlı formları bir araya getirerek dekorasyonda bütünlüklü bir görünüm oluşturur.",
+  11:"Üç parçalı kemer form tasarımı, geometrik çizgileriyle modern ve minimal yaşam alanlarına dekoratif bir dokunuş katar.",
+  12:"Sütun formundaki yalın tasarım, zamansız dekorasyon anlayışına uyum sağlayan sade bir görünüm sunar.",
+  13:"Deniz kabuğu formundan ilham alan tasarımıyla doğal dokuları ve sahil esintisini dekorasyona taşır.",
+  14:"Küp formundaki bubble tasarımı, yuvarlak yüzey detaylarıyla modern ve dikkat çekici bir dekoratif mum görünümü sunar.",
+  15:"Ahşap fitilin çıtırtılı kullanım hissi ve vanilya, sandal ağacı, amber notalarıyla Woodfire koleksiyonunun sıcak karakterini yansıtır.",
+  19:"Tarçın kabuğu, kehribar ve sedir notalarını bir araya getiren bu Woodfire seçeneği, sıcak ve baharatlı koku profili sevenler için tasarlanmıştır.",
+  20:"Kavrulmuş meşe, reçine ve vanilya notalarıyla odunsu ve sıcak bir koku karakteri sunan Woodfire seçeneğidir.",
+  16:"Evde kendi mumunu hazırlamak isteyenler için bir araya getirilen kit; soya wax, esans şişesi, cam kap, fitiller, fitil tutucu ve adım adım yapım kılavuzunu içerir.",
+  17:"Mum bakımını kolaylaştırmak için hazırlanan set; mat siyah paslanmaz çelik fitil kesici, mum söndürücü ve fitil düzelticiden oluşur.",
+  18:"Cam kibritlik, mum köşenizi tamamlayan işlevsel ve dekoratif bir tamamlayıcı aksesuardır."
+};
+function getProductDescription(p){return productDescriptionOverrides[p.id] || p.description || "Ürün detayları yakında eklenecektir.";}
+function getProductSpecsRows(p,colorHtml){
+  const rows=[];
+  if(p.feature) rows.push(`<div class="detail-spec-row"><strong>Özelliği</strong><span>${p.feature}</span></div>`);
+  if(p.notes) rows.push(`<div class="detail-spec-row"><strong>Aroma Notaları</strong><span>${p.notes}</span></div>`);
+  if(p.specs) rows.push(`<div class="detail-spec-row"><strong>Malzeme / Ürün İçeriği</strong><span>${p.specs}</span></div>`);
+  const burn=p.burnTime || ([15,19,20].includes(p.id)?"Yaklaşık 45 saat":"Belirtilmemiş");
+  if([1,2,15,19,20].includes(p.id)) rows.push(`<div class="detail-spec-row"><strong>Yanma Süresi</strong><span>${burn}</span></div>`);
+  if(p.category === "Sculpture & Form" && p.dimensions) rows.push(`<div class="detail-spec-row"><strong>Ölçü</strong><span>${p.dimensions}</span></div>`);
+  if(colorHtml) rows.push(colorHtml);
+  return rows.join("");
+}
+
+function openProductModal(id){
+  const p = products.find(x => x.id === id);
+  if(!p) return;
+  const imgs = getProductImages(p);
+  const defaultColor = getDefaultColorForProduct(p);
+  const activeColor = p.colorTargetId ? defaultColor : (selectedColorByProduct[p.id] || defaultColor);
+  if(activeColor) selectedColorByProduct[p.id] = activeColor;
+  const hasMultiple = imgs.length > 1;
+  const pct = getDiscountPercent(p);
+
+  const colorHtml = (p.colors && p.colors.length)
+    ? `<div class="detail-spec-row"><strong>Renk Seçeneği</strong><div class="detail-colors">${p.colors.map(c => `<button type="button" class="color-chip ${c===activeColor?'selected':''}" data-pid="${p.id}" data-color="${c}" onclick="selectColor(${p.id}, '${c}')">${c}</button>`).join("")}</div></div>`
+    : "";
+
+  const specsRows = getProductSpecsRows(p,colorHtml);
+
+  const safeImgsJson = JSON.stringify(imgs).replace(/"/g, "&quot;");
+
+  document.getElementById("product-detail-content").innerHTML = `
+    <div class="detail-grid">
+      <div class="detail-media">
+        <div class="detail-carousel" style="position:relative">
+          ${pct > 0 ? `<div class="discount-badge">-%${pct} İNDİRİM</div>` : (p.lowStockLabel ? `<div class="low-stock-badge">${p.lowStockLabel}</div>` : "")}
+          ${hasMultiple ? `<button type="button" class="carousel-arrow prev always-show" onclick="stepCarousel('detail-carousel-track', -1, event)" aria-label="Önceki fotoğraf">‹</button>` : ""}
+          <div class="carousel-track" id="detail-carousel-track" onscroll="syncCarouselDots(this, 'detail-carousel-dots')">
+            ${imgs.map((src, idx) => `
+              <div class="carousel-slide" style="position:relative" onclick="openImageLightbox(${safeImgsJson}, ${idx})" title="Büyütmek için tıklayın">
+                <img src="${src}" alt="${p.name} ${idx+1}" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-missing');this.parentElement.setAttribute('data-placeholder','Bu fotoğraf bu cihazda kayıtlı değil. Fotoğraf aktarımını kullanın.')">
+              </div>
+            `).join("")}
+          </div>
+          ${hasMultiple ? `<button type="button" class="carousel-arrow next always-show" onclick="stepCarousel('detail-carousel-track', 1, event)" aria-label="Sonraki fotoğraf">›</button>` : ""}
+          ${hasMultiple ? `<div class="carousel-dots" id="detail-carousel-dots">${imgs.map((_, idx) => `<button type="button" class="carousel-dot ${idx===0?'active':''}" onclick="goToCarouselSlide('detail-carousel-track', ${idx}, event)" aria-label="Görsel ${idx+1}"></button>`).join("")}</div>` : ""}
+        </div>
+      </div>
+      <div class="detail-body">
+        <div class="eyebrow">${p.category}</div>
+        <h2>${p.name}</h2>
+        ${p.price != null ? `<div class="detail-price">${formatPriceHtml(p, true)}</div>` : `<div class="pending" style="margin-bottom:16px">Fiyat ve satış bilgisi yakında</div>`}
+        ${p.stock != null ? `<div class="detail-stock">Stok Durumu: ${p.stock} adet</div>` : ""}
+        <p class="detail-desc">${getProductDescription(p)}</p>
+        ${specsRows ? `<div class="detail-specs">${specsRows}</div>` : ""}
+        ${p.price != null ? `<div class="detail-actions"><button class="btn" onclick="closeProductModal();addToCart(${p.id})">SEPETE EKLE +</button><button type="button" id="detail-fav-btn" data-pid="${p.id}" class="btn-outline" onclick="toggleFavorite(${p.id})">${isFavorite(p.id) ? "♥ FAVORİLERDE" : "♡ FAVORİLERE EKLE"}</button></div>` : ""}
+      </div>
+    </div>
+  `;
+  const modalBox = document.querySelector("#product-modal .detail-modal");
+  if(modalBox) modalBox.scrollTop = 0;
+  document.getElementById("product-modal").classList.add("open");
+}
+
+function closeProductModal(){document.getElementById("product-modal").classList.remove("open")}
+
+function renderProducts(){
+  document.getElementById("product-grid").innerHTML = products
+    .filter(p => currentFilter === "Tümü" || p.category === currentFilter)
+    .map(p => {
+      const imgs = getProductImages(p);
+      const hasMultiple = imgs.length > 1;
+      const trackId = `card-track-${p.id}`;
+      const dotsId = `card-dots-${p.id}`;
+      const pct = getDiscountPercent(p);
+      return `<article class="product">
+        <div class="product-image" onclick="openProductModal(${p.id})">
+          ${pct > 0 ? `<div class="discount-badge">-%${pct} İNDİRİM</div>` : (p.lowStockLabel ? `<div class="low-stock-badge">${p.lowStockLabel}</div>` : "")}
+          <button type="button" class="fav-toggle ${isFavorite(p.id) ? 'active' : ''}" onclick="toggleFavorite(${p.id}, event)" aria-label="Favorilere ekle" title="Favorilere ekle">${isFavorite(p.id) ? '♥' : '♡'}</button>
+          <div class="carousel-wrap">
+            ${hasMultiple ? `<button type="button" class="carousel-arrow prev" onclick="stepCarousel('${trackId}', -1, event)" aria-label="Önceki">‹</button>` : ""}
+            <div class="carousel-track" id="${trackId}" onscroll="syncCarouselDots(this, '${dotsId}')">
+              ${imgs.map((src, idx) => `
+                <div class="carousel-slide" style="position:relative">
+                  <img src="${src}" alt="${p.name} ${idx+1}" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-missing');this.parentElement.setAttribute('data-placeholder','Bu fotoğraf bu cihazda kayıtlı değil. Fotoğraf aktarımını kullanın.')">
+                </div>
+              `).join("")}
+            </div>
+            ${hasMultiple ? `<button type="button" class="carousel-arrow next" onclick="stepCarousel('${trackId}', 1, event)" aria-label="Sonraki">›</button>` : ""}
+            ${hasMultiple ? `<div class="carousel-dots" id="${dotsId}">${imgs.map((_, idx) => `<button type="button" class="carousel-dot ${idx===0?'active':''}" onclick="goToCarouselSlide('${trackId}', ${idx}, event)" aria-label="Foto ${idx+1}"></button>`).join("")}</div>` : ""}
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="series-label">${p.category}</div>
+          <h3 onclick="openProductModal(${p.id})">${p.name}</h3>
+          <p>${getProductDescription(p)}</p>
+          ${p.price != null ? `${formatPriceHtml(p, false)}<button onclick="addToCart(${p.id})">SEPETE EKLE +</button>` : '<span class="pending">Fiyat ve satış bilgisi yakında</span>'}
+        </div>
+      </article>`;
+    }).join("");
+}
+
+function saveCart(){
+  localStorage.setItem("odnature-cart", JSON.stringify(cart));
+  document.getElementById("cart-count").textContent = cart.reduce((s, x) => s + x.qty, 0);
+}
+
+function addToCart(id){
+  const p = products.find(x => x.id === id && x.price != null);
+  if(!p) return;
+  const chosenColor = (p.colorTargetId ? getDefaultColorForProduct(p) : selectedColorByProduct[id]) || (p.colors && p.colors[0]) || "";
+  const key = chosenColor ? `${id}__${chosenColor}` : `${id}`;
+  let item = cart.find(x => (x.key || `${x.id}`) === key);
+  if(item) item.qty++;
+  else cart.push({ id, key, color: chosenColor, qty: 1 });
+  saveCart();
+  openCart();
+}
+
+function removeItem(key){
+  cart = cart.filter(x => (x.key || `${x.id}`) !== String(key));
+  saveCart();
+  renderCart();
+}
+
+function renderCart(){
+  let el = document.getElementById("cart-content");
+  if(!cart.length){
+    el.innerHTML = "<h2>Alışveriş Sepetiniz</h2><p class='empty'>Sepetiniz şu anda boş.</p>";
+    return;
+  }
+  let total = cart.reduce((s, x) => {
+    let p = products.find(pr => pr.id === x.id);
+    return s + (p ? p.price * x.qty : 0);
+  }, 0);
+  el.innerHTML = `<h2>Alışveriş Sepetiniz</h2>${cart.map(x => {
+    let p = products.find(pr => pr.id === x.id);
+    let k = x.key || `${x.id}`;
+    let colorLabel = x.color ? ` (${x.color})` : "";
+    return `<div class="cart-line"><span>${p.name}${colorLabel} × ${x.qty}</span><span>${money(p.price * x.qty)} <button onclick="removeItem('${k}')">Kaldır</button></span></div>`;
+  }).join("")}<div class="cart-total"><b>Toplam</b><b>${money(total)}</b></div><button class="btn" onclick="openCheckout()">ÖDEME ADIMINA GEÇ</button>`;
+}
+
+function openCart(){renderCart();document.getElementById("cart-modal").classList.add("open")}
+function closeCart(){document.getElementById("cart-modal").classList.remove("open")}
+
+let pendingOrderData = null;
+let generatedOtpCode = "";
+
+function detectCardScheme(rawDigits){
+  if(rawDigits.startsWith("9792")) return "TROY";
+  if(rawDigits.startsWith("4")) return "VISA";
+  return "";
+}
+
+function updateSchemeHighlight(rawDigits){
+  const scheme = detectCardScheme(rawDigits);
+  const visaEl = document.getElementById("badge-visa");
+  const troyEl = document.getElementById("badge-troy");
+  if(visaEl) visaEl.classList.toggle("active-scheme", scheme === "VISA");
+  if(troyEl) troyEl.classList.toggle("active-scheme", scheme === "TROY");
+}
+
+function formatCardNumber(input){
+  let v = input.value.replace(/\D/g, "").slice(0, 16);
+  input.value = v.replace(/(.{4})/g, "$1 ").trim();
+  updateSchemeHighlight(v);
+}
+
+function formatExpiry(input){
+  let v = input.value.replace(/\D/g, "").slice(0, 4);
+  if(v.length >= 3) v = v.slice(0, 2) + "/" + v.slice(2);
+  input.value = v;
+}
+
+function openCheckout(){
+  closeCart();
+  let total = cart.reduce((s, x) => {
+    let p = products.find(pr => pr.id === x.id);
+    return s + (p ? p.price * x.qty : 0);
+  }, 0);
+  document.getElementById("checkout-content").innerHTML = `
+    <div class="eyebrow">3D SECURE ÖDEME ADIMI</div>
+    <h2>Ödeme Bilgileri</h2>
+    <div class="cart-total"><span>Ödenecek Tutar</span><b>${money(total)}</b></div>
+    <div class="checkout-fields">
+      <input id="pay-name" placeholder="Ad Soyad" value="${currentUser ? currentUser.name : ''}" required>
+      <input id="pay-email" type="email" placeholder="E-posta Adresi" value="${currentUser ? currentUser.email : ''}" required>
+      <textarea id="pay-address" placeholder="Teslimat Adresi" required></textarea>
+    </div>
+    <div class="card-box">
+      <div class="scheme-bar">
+        <div class="card-box-title" style="margin:0">Kart Bilgileri</div>
+        <div class="scheme-badges">
+          <span id="badge-visa" class="scheme-badge visa">VISA</span>
+          <span id="badge-troy" class="scheme-badge troy">TROY</span>
+        </div>
+      </div>
+      <div class="secure-tag" style="margin-bottom:10px">VISA ve TROY kartlarla 3D Secure güvenli doğrulama desteklenir.</div>
+      <div class="checkout-fields" style="margin:0">
+        <input id="card-holder" placeholder="Kart Üzerindeki İsim" required>
+        <input id="card-number" inputmode="numeric" maxlength="19" placeholder="Kart Numarası (VISA 4... / TROY 9792...)" oninput="formatCardNumber(this)" required>
+        <div class="card-row-2">
+          <input id="card-expiry" inputmode="numeric" maxlength="5" placeholder="Son Kullanma (AA/YY)" oninput="formatExpiry(this)" required>
+          <input id="card-cvv" inputmode="numeric" maxlength="4" placeholder="CVV" required>
+        </div>
+      </div>
+    </div>
+    <button class="btn pay-btn" onclick="startSecureVerification(${total})">GÜVENLİ ÖDEME KODU GÖNDER</button>
+  `;
+  document.getElementById("checkout-modal").classList.add("open");
+}
+
+function sendVerificationCode(){
+  generatedOtpCode = String(Math.floor(100000 + Math.random() * 900000));
+  const statusEl = document.getElementById("otp-status");
+  if(statusEl){
+    statusEl.innerHTML = `Doğrulama kodu <b>${pendingOrderData.email}</b> adresine gönderildi. (Test / Doğrulama Kodu: <b>${generatedOtpCode}</b>)`;
+  }
+}
+
+function startSecureVerification(total){
+  const name = document.getElementById("pay-name").value.trim();
+  const email = document.getElementById("pay-email").value.trim();
+  const address = document.getElementById("pay-address").value.trim();
+  const holder = document.getElementById("card-holder").value.trim();
+  const number = document.getElementById("card-number").value.replace(/\s/g, "");
+  const expiry = document.getElementById("card-expiry").value.trim();
+  const cvv = document.getElementById("card-cvv").value.trim();
+
+  if(!name || !email || !address || !holder || number.length < 15 || expiry.length < 5 || cvv.length < 3){
+    alert("Lütfen iletişim, teslimat adresi ve kart bilgilerini eksiksiz doldurun.");
+    return;
+  }
+
+  const detected = detectCardScheme(number);
+  const schemeLabel = detected || "VISA / TROY";
+  pendingOrderData = {
+    name,
+    email,
+    address,
+    holder,
+    last4: number.slice(-4),
+    scheme: schemeLabel,
+    total
+  };
+
+  document.getElementById("checkout-content").innerHTML = `
+    <div class="eyebrow">3D SECURE DOĞRULAMA</div>
+    <h2>Güvenli Ödeme Kodu</h2>
+    <div class="otp-box">
+      <div class="scheme-bar">
+        <span class="secure-tag">Kart: <b>${schemeLabel}</b> •••• <b>${pendingOrderData.last4}</b></span>
+        <b>${money(total)}</b>
+      </div>
+      <p class="otp-code-hint">Ödemeyi onaylamak için <b>${email}</b> adresine gönderilen 6 haneli güvenli ödeme kodunu girin.</p>
+      <input id="otp-input" inputmode="numeric" maxlength="6" placeholder="6 Haneli Doğrulama Kodu" style="width:100%;padding:13px;border:1px solid var(--line);background:#fff;font:14px Arial,sans-serif;letter-spacing:3px">
+      <div id="otp-status" class="otp-status"></div>
+      <div class="otp-actions">
+        <button class="btn" onclick="verifyCodeAndComplete()">KODU ONAYLA VE ÖDE</button>
+        <button type="button" class="link-btn" onclick="sendVerificationCode()">Kodu Tekrar Gönder</button>
+        <button type="button" class="link-btn" onclick="openCheckout()">Kart Bilgilerini Değiştir</button>
+      </div>
+    </div>
+  `;
+  sendVerificationCode();
+}
+
+function verifyCodeAndComplete(){
+  if(!pendingOrderData) return;
+  const entered = document.getElementById("otp-input").value.trim();
+  if(!entered || entered.length < 4){
+    alert("Lütfen gelen güvenli ödeme kodunu girin.");
+    return;
+  }
+  if(generatedOtpCode && entered !== generatedOtpCode){
+    alert("Girdiğiniz doğrulama kodu hatalı. Lütfen kontrol edin veya yeni kod gönderin.");
+    return;
+  }
+
+  const { name, address, last4, scheme, total } = pendingOrderData;
+  pendingOrderData = null;
+  generatedOtpCode = "";
+
+  document.getElementById("checkout-content").innerHTML = `
+    <div class="eyebrow">OD&amp;NATURE • 3D SECURE ONAYLI</div>
+    <h2>Ödeme Başarıyla Tamamlandı</h2>
+    <p class="empty">Teşekkür ederiz, <b>${name}</b>. <b>${money(total)}</b> tutarındaki ödemeniz <b>${scheme} •••• ${last4}</b> kartınız ve 3D Secure doğrulaması ile onaylandı.</p>
+    <p class="empty" style="padding-top:0">Teslimat Adresi: ${address}</p>
+    <button class="btn" onclick="cart=[];saveCart();closeCheckout()">ALIŞVERİŞE DÖN</button>
+  `;
+  cart = [];
+  saveCart();
+}
+
+function closeCheckout(){
+  pendingOrderData = null;
+  generatedOtpCode = "";
+  document.getElementById("checkout-modal").classList.remove("open");
+}
+
+
+// --- KOLEKSİYON & HİKÂYEMİZ FOTOĞRAF YÜKLEME ---
+const collectionDefs = [
+  { cat: "Aura", label: "Aura", alt: "Aura · Ferahlık Serisi", defaultImg: "images/aura-mint.jpg" },
+  { cat: "Sculpture & Form", label: "Sculpture & Form", alt: "Heykel ve Form Serisi", defaultImg: "images/collection-sculptur.jpg" },
+  { cat: "Woodfire", label: "Woodfire", alt: "Odun Ateşi Serisi", defaultImg: "images/woodfire.jpg" },
+  { cat: "Candle Making Kit", label: "Candle Making Kit", alt: "Evde Mum Yapım Kiti", defaultImg: "images/candle-making-kit.jpg" },
+  { cat: "Candle Care Kit", label: "Candle Care Kit", alt: "Mum Bakım Kiti", defaultImg: "images/cam-kibritlik.jpg" }
+];
+let sectionPhotos = JSON.parse(localStorage.getItem("odnature-section-photos") || "{}");
+
+function saveSectionPhotos(){
+  try { localStorage.setItem("odnature-section-photos", JSON.stringify(sectionPhotos)); } catch(e){}
+}
+
+function renderCollections(){
+  const grid = document.getElementById("collections-grid");
+  if(!grid) return;
+  grid.innerHTML = collectionDefs.map((c, idx) => {
+    const key = "col_" + idx;
+    const src = sectionPhotos[key] || c.defaultImg;
+    return `<div class="collection" style="cursor:pointer" onclick="setFilter('${c.cat}');document.getElementById('urunler').scrollIntoView({behavior:'smooth'})">
+      <img src="${src}" alt="${c.alt}" onerror="this.style.opacity=0">
+      <span>${c.label}</span>
+    </div>`;
+  }).join("");
+}
+
+function renderStoryPhoto(){
+  const img = document.getElementById("story-photo-img");
+  if(!img) return;
+  const src = sectionPhotos["story"] || "images/story.jpg";
+  img.src = src;
+  img.style.opacity = 1;
+}
+
+async function handleSectionPhotoUpload(key, fileList){
+  if(!fileList || !fileList[0]) return;
+  const file = fileList[0];
+  if(!file.type.startsWith("image/")) return;
+  const dataUrl = await compressImageFile(file, 1200, 0.86);
+  sectionPhotos[key] = dataUrl;
+  saveSectionPhotos();
+  renderCollections();
+  renderStoryPhoto();
+}
+
+function renderHeroPhoto(){
+  const heroEl = document.querySelector(".hero");
+  if(!heroEl) return;
+  const customHero = sectionPhotos && sectionPhotos["hero"];
+  const bgUrl = customHero || "images/hero.jpg";
+  heroEl.style.backgroundImage = `linear-gradient(90deg,rgba(29,27,22,.64),rgba(29,27,22,.28)),url("${bgUrl}")`;
+  heroEl.style.backgroundSize = "cover";
+  heroEl.style.backgroundPosition = "center";
+  heroEl.style.backgroundRepeat = "no-repeat";
+}
+
+async function handleHeroPhotoUpload(fileList){
+  if(!fileList || !fileList[0]) return;
+  const file = fileList[0];
+  if(!file.type.startsWith("image/")) return;
+  const dataUrl = await compressImageFile(file, 1600, 0.88);
+  sectionPhotos["hero"] = dataUrl;
+  saveSectionPhotos();
+  renderHeroPhoto();
+}
+
+const defaultBuyerReviews = [
+  {
+    name: "Kübra Yılmaz",
+    product: "Aura Fresh (Doğanın Ferahlığı)",
+    rating: 5,
+    comment: "Okaliptüs ve çam kokusu odayı hiç yormadan tazeliyor, akşamları yaktığımda ortamın havası anında ferahlıyor."
+  },
+  {
+    name: "Mert Arslan",
+    product: "Woodfire (Odun Ateşi)",
+    rating: 5,
+    comment: "Ahşap fitilin hafif çıtırtısı ile vanilya ve sandal ağacı kokusu birleşince çok sıcak ve huzurlu bir akşam atmosferi oluşuyor."
+  },
+  {
+    name: "Elif Demir",
+    product: "Candle Making Kit (Evde Mum Yapım Kiti)",
+    rating: 5,
+    comment: "İçindeki soya waxı, esans ve rehber sayesinde evde kendi mumumu dökmek hem çok pratik hem de çok keyifliydi."
+  },
+  {
+    name: "Selin Toprak",
+    product: "Aura Mint (Nane Ferahlığı)",
+    rating: 5,
+    comment: "Evde sehpanın üzerine koyup yaktım, ferahlığı ve cam kavanoz duruşu tam beklediğim gibi geldi.",
+    photo: "images/yorum-aura-mint.jpg"
+  }
+];
+
+let buyerReviews = JSON.parse(localStorage.getItem("odnature-buyer-reviews-v2") || "null") || defaultBuyerReviews;
+
+function populateReviewProducts(){
+  const select = document.getElementById("rev-product");
+  if(!select || typeof products === "undefined") return;
+  select.innerHTML = products.map(p => `<option value="${p.name}">${p.name}</option>`).join("");
+}
+
+function openReviewPhoto(src){
+  if(!src) return;
+  if(typeof openImageLightbox === "function"){
+    openImageLightbox([src], 0);
+  } else {
+    window.open(src, "_blank", "noopener,noreferrer");
+  }
+}
+
+function renderBuyerReviews(){
+  const list = document.getElementById("reviews-list");
+  if(!list) return;
+  list.innerHTML = buyerReviews.map(r => {
+    const stars = "★".repeat(r.rating) + "☆".repeat(5 - r.rating);
+    const photoBlock = r.photo ? `<div class="review-photo-box" style="margin-top:10px;">
+      <img src="${r.photo}" alt="${r.product} - ${r.name}" title="Büyütmek için tıklayın" style="width:120px;height:120px;object-fit:cover;border-radius:10px;border:1px solid var(--line);cursor:pointer;" onclick="openReviewPhoto('${r.photo}')">
+    </div>` : "";
+    return `<div class="review-item">
+      <div class="review-item-head">
+        <div class="review-item-meta"><strong>${r.name}</strong> <span>• ${r.product}</span></div>
+        <div class="review-item-stars">${stars} (${r.rating}/5)</div>
+      </div>
+      <p class="review-item-text">${r.comment}</p>
+      ${photoBlock}
+    </div>`;
+  }).join("");
+}
+
+const reviewForm = document.getElementById("review-form");
+if(reviewForm){
+  reviewForm.addEventListener("submit", function(e){
+    e.preventDefault();
+    const name = document.getElementById("rev-author").value.trim();
+    const product = document.getElementById("rev-product").value;
+    const rating = parseInt(document.getElementById("rev-rating").value, 10) || 5;
+    const comment = document.getElementById("rev-comment").value.trim();
+    if(!name || !comment) return;
+    buyerReviews.unshift({ name, product, rating, comment });
+    localStorage.setItem("odnature-buyer-reviews-v2", JSON.stringify(buyerReviews));
+    renderBuyerReviews();
+    reviewForm.reset();
+  });
+}
+
+populateReviewProducts();
+renderBuyerReviews();
+
+// --- HESABIM (ADRES, KREDİ KARTI, FAVORİLER, SİPARİŞ TAKİBİ) ---
+let savedAddresses = JSON.parse(localStorage.getItem("odnature-addresses") || "[]");
+let savedCards = JSON.parse(localStorage.getItem("odnature-cards") || "[]");
+let userOrders = JSON.parse(localStorage.getItem("odnature-orders") || "[]");
+
+function saveAccountData(){
+  localStorage.setItem("odnature-addresses", JSON.stringify(savedAddresses));
+  localStorage.setItem("odnature-cards", JSON.stringify(savedCards));
+  localStorage.setItem("odnature-orders", JSON.stringify(userOrders));
+}
+
+function openFavoritesModal(){
+  if(currentUser){
+    openAuthModal("profile", "favorites");
+  } else {
+    renderFavorites();
+    document.getElementById("fav-modal").classList.add("open");
+  }
+}
+
+function addSavedAddress(){
+  const title = document.getElementById("addr-title").value.trim() || "Adres";
+  const detail = document.getElementById("addr-detail").value.trim();
+  if(!detail){ alert("Lütfen açık adresi girin."); return; }
+  savedAddresses.push({ id: Date.now(), title, detail });
+  saveAccountData();
+  openAuthModal("profile", "addresses");
+}
+
+function deleteSavedAddress(id){
+  savedAddresses = savedAddresses.filter(a => a.id !== id);
+  saveAccountData();
+  openAuthModal("profile", "addresses");
+}
+
+function addSavedCard(){
+  const holder = document.getElementById("saved-card-holder").value.trim();
+  const numRaw = document.getElementById("saved-card-num").value.replace(/\D/g, "");
+  const exp = document.getElementById("saved-card-exp").value.trim();
+  if(!holder || numRaw.length < 15){ alert("Lütfen kart sahibini ve geçerli kart numarasını girin."); return; }
+  const scheme = detectCardScheme(numRaw) || "KART";
+  savedCards.push({ id: Date.now(), holder, last4: numRaw.slice(-4), scheme, exp: exp || "**/**" });
+  saveAccountData();
+  openAuthModal("profile", "cards");
+}
+
+function deleteSavedCard(id){
+  savedCards = savedCards.filter(c => c.id !== id);
+  saveAccountData();
+  openAuthModal("profile", "cards");
+}
+
+function advanceOrderStatus(orderId){
+  const stages = ["Hazırlanıyor", "Kargoya Verildi", "Teslim Edildi"];
+  const ord = userOrders.find(o => o.id === orderId);
+  if(!ord) return;
+  const idx = stages.indexOf(ord.status);
+  ord.status = stages[(idx + 1) % stages.length];
+  saveAccountData();
+  openAuthModal("profile", "orders");
+}
+
+function renderProfileSubTab(subtab = "overview"){
+  const navBar = `
+    <div class="auth-tabs" style="flex-wrap:wrap;gap:12px">
+      <button type="button" class="auth-tab ${subtab==='overview'?'active':''}" onclick="openAuthModal('profile','overview')">Profil</button>
+      <button type="button" class="auth-tab ${subtab==='favorites'?'active':''}" onclick="openAuthModal('profile','favorites')">Favorilerim (${favorites.length})</button>
+      <button type="button" class="auth-tab ${subtab==='orders'?'active':''}" onclick="openAuthModal('profile','orders')">Sipariş Takibi (${userOrders.length})</button>
+      <button type="button" class="auth-tab ${subtab==='addresses'?'active':''}" onclick="openAuthModal('profile','addresses')">Adreslerim (${savedAddresses.length})</button>
+      <button type="button" class="auth-tab ${subtab==='cards'?'active':''}" onclick="openAuthModal('profile','cards')">Kartlarım (${savedCards.length})</button>
+    </div>
+  `;
+
+  if(subtab === "favorites"){
+    const favListHtml = !favorites.length
+      ? "<p class='empty'>Henüz favori ürününüz bulunmuyor.</p>"
+      : favorites.map(id => {
+          const p = products.find(pr => pr.id === id);
+          if(!p) return "";
+          const img = getProductImages(p)[0] || "";
+          return `<div class="fav-row">
+            <div class="fav-row-left">
+              <img src="${img}" alt="${p.name}" onerror="this.style.opacity=0">
+              <div><div style="font-size:15px">${p.name}</div><div style="font:12px Arial,sans-serif;color:var(--muted)">${money(p.price)}</div></div>
+            </div>
+            <div class="fav-row-actions">
+              <button onclick="closeAuthModal();addToCart(${p.id})">Sepete Ekle</button>
+              <button onclick="toggleFavorite(${p.id});openAuthModal('profile','favorites')">Kaldır</button>
+            </div>
+          </div>`;
+        }).join("");
+    return `<div class="eyebrow">HESABIM • FAVORİLERİM</div><h2>Favorilerim</h2>${navBar}${favListHtml}`;
+  }
+
+  if(subtab === "orders"){
+    const stages = ["Hazırlanıyor", "Kargoya Verildi", "Teslim Edildi"];
+    const ordersHtml = !userOrders.length
+      ? "<p class='empty'>Henüz tamamlanmış bir siparişiniz yok. Ödeme yaptığınızda siparişleriniz burada listelenir.</p>"
+      : userOrders.map(o => {
+          const curIdx = Math.max(0, stages.indexOf(o.status));
+          return `<div class="order-card">
+            <div class="order-head">
+              <div><b>Sipariş #${o.code}</b> • ${o.date}</div>
+              <span class="status-pill">${o.status}</span>
+            </div>
+            <div style="font:12px Arial,sans-serif;color:var(--muted);margin-bottom:6px">Ödenen Tutar: <b>${moneyExact(o.total)}</b> • Adres: ${o.address}</div>
+            <div class="steps-track">
+              ${stages.map((st, i) => `<div class="step-item ${i <= curIdx ? 'done' : ''}">${st}</div>`).join("")}
+            </div>
+            <div style="margin-top:10px;text-align:right">
+              <button type="button" class="link-btn" onclick="advanceOrderStatus(${o.id})">Durumu Güncelle (Simüle Et)</button>
+            </div>
+          </div>`;
+        }).join("");
+    return `<div class="eyebrow">HESABIM • SİPARİŞ TAKİBİ</div><h2>Siparişlerim</h2>${navBar}${ordersHtml}`;
+  }
+
+  if(subtab === "addresses"){
+    const listHtml = savedAddresses.map(a => `
+      <div class="saved-card-item">
+        <div><b>${a.title}</b>: ${a.detail}</div>
+        <button type="button" class="link-btn" onclick="deleteSavedAddress(${a.id})">Sil</button>
+      </div>
+    `).join("");
+    return `<div class="eyebrow">HESABIM • ADRESLERİM</div><h2>Kayıtlı Adreslerim</h2>${navBar}${listHtml}
+      <div class="checkout-fields">
+        <input id="addr-title" placeholder="Adres Başlığı (Örn: Ev, İş)">
+        <textarea id="addr-detail" placeholder="Açık Teslimat Adresi"></textarea>
+      </div>
+      <button class="btn" onclick="addSavedAddress()">ADRES KAYDET</button>`;
+  }
+
+  if(subtab === "cards"){
+    const cardListHtml = savedCards.map(c => `
+      <div class="saved-card-item">
+        <div><b>${c.scheme}</b> •••• <b>${c.last4}</b> (${c.holder} - ${c.exp})</div>
+        <button type="button" class="link-btn" onclick="deleteSavedCard(${c.id})">Sil</button>
+      </div>
+    `).join("");
+    return `<div class="eyebrow">HESABIM • KARTLARIM</div><h2>Kayıtlı Kredi Kartlarım</h2>${navBar}${cardListHtml}
+      <div class="checkout-fields">
+        <input id="saved-card-holder" placeholder="Kart Üzerindeki İsim">
+        <input id="saved-card-num" inputmode="numeric" maxlength="19" placeholder="Kart Numarası" oninput="formatCardNumber(this)">
+        <input id="saved-card-exp" inputmode="numeric" maxlength="5" placeholder="Son Kullanma (AA/YY)" oninput="formatExpiry(this)">
+      </div>
+      <button class="btn" onclick="addSavedCard()">KART KAYDET</button>`;
+  }
+
+  return `<div class="eyebrow">HESABIM</div><h2>Hoş geldiniz, ${currentUser.name}</h2>${navBar}
+    <div class="notice"><b>E-posta:</b> ${currentUser.email}<br><b>Telefon:</b> ${currentUser.phone || "Belirtilmedi"}<br><b>Favori Ürün:</b> ${favorites.length} • <b>Sipariş:</b> ${userOrders.length} • <b>Kayıtlı Adres:</b> ${savedAddresses.length} • <b>Kayıtlı Kart:</b> ${savedCards.length}</div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn" onclick="openAuthModal('profile','orders')">SİPARİŞLERİMİ GÖR</button>
+      <button class="btn-outline" onclick="openAuthModal('profile','favorites')">FAVORİLERİM</button>
+      <button class="btn-outline" onclick="logoutUser()">ÇIKIŞ YAP</button>
+    </div>`;
+}
+
+function togglePasswordVisibility(inputId, btn){
+  const input = document.getElementById(inputId);
+  if(!input) return;
+  const isHidden = input.type === "password";
+  input.type = isHidden ? "text" : "password";
+  btn.setAttribute("aria-label", isHidden ? "Şifreyi gizle" : "Şifreyi göster");
+  btn.innerHTML = isHidden
+    ? `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg>`
+    : `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>`;
+}
+
+function passwordInputHtml(id, placeholder){
+  return `
+    <div class="password-field-wrap">
+      <input id="${id}" type="password" placeholder="${placeholder}">
+      <button type="button" class="password-toggle-btn" onclick="togglePasswordVisibility('${id}', this)" aria-label="Şifreyi göster" title="Şifreyi göster / gizle">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      </button>
+    </div>
+  `;
+}
+
+function openAuthModal(tab = "login", subtab = "overview"){
+  const el = document.getElementById("auth-content");
+  if(currentUser && tab === "profile"){
+    el.innerHTML = renderProfileSubTab(subtab);
+    document.getElementById("auth-modal").classList.add("open");
+    return;
+  }
+
+  const tabsHtml = `
+    <div class="auth-tabs">
+      <button type="button" class="auth-tab ${tab==='login'?'active':''}" onclick="openAuthModal('login')">Giriş Yap</button>
+      <button type="button" class="auth-tab ${tab==='register'?'active':''}" onclick="openAuthModal('register')">Kayıt Ol</button>
+      <button type="button" class="auth-tab ${tab==='forgot'?'active':''}" onclick="openAuthModal('forgot')">Şifremi Unuttum</button>
+    </div>
+  `;
+
+  if(tab === "register"){
+    el.innerHTML = `<div class="eyebrow">OD&amp;NATURE ÜYELİK</div><h2>Kayıt Ol</h2>${tabsHtml}<div class="checkout-fields"><input id="reg-name" placeholder="Ad Soyad"><input id="reg-email" type="email" placeholder="E-posta Adresi"><input id="reg-phone" type="tel" placeholder="Telefon Numarası (5XX XXX XX XX)">${passwordInputHtml("reg-pass", "Şifre Oluşturun")}</div><button class="btn pay-btn" onclick="registerUser()">KAYIT OL</button>`;
+  } else if(tab === "forgot"){
+    el.innerHTML = `<div class="eyebrow">HESAP KURTARMA</div><h2>Şifremi Unuttum</h2>${tabsHtml}<p class="empty" style="padding:0 0 12px">Kayıtlı e-posta adresinizi girin, şifre yenileme bağlantısını gönderelim.</p><div class="checkout-fields"><input id="forgot-email" type="email" placeholder="E-posta Adresi"></div><button class="btn pay-btn" onclick="recoverPassword()">ŞİFRE YENİLEME BAĞLANTISI GÖNDER</button>`;
+  } else {
+    el.innerHTML = `<div class="eyebrow">OD&amp;NATURE ÜYELİK</div><h2>Giriş Yap</h2>${tabsHtml}<div class="checkout-fields"><input id="login-email" type="email" placeholder="E-posta Adresi">${passwordInputHtml("login-pass", "Şifre")}</div><button class="btn pay-btn" onclick="loginUser()">GİRİŞ YAP</button>`;
+  }
+  document.getElementById("auth-modal").classList.add("open");
+}
+
+// --- KARGO (78.99₺, 1500₺ ÜZERİ BEDAVA), İNDİRİM KODU & SİPARİŞ ÖZETİ ---
+const SHIPPING_FEE = 78.99;
+const FREE_SHIPPING_THRESHOLD = 1500;
+let appliedPromoCode = "";
+let promoDiscountRate = 0;
+let promoFixedAmount = 0;
+let promoMinSubtotal = 0;
+let promoMessage = "";
+
+function moneyExact(n){
+  return new Intl.NumberFormat("tr-TR", { style: "currency", currency: "TRY", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n);
+}
+
+function computeOrderSummary(){
+  let rawOriginalSubtotal = 0;
+  let currentSubtotal = 0;
+  cart.forEach(x => {
+    const p = products.find(pr => pr.id === x.id);
+    if(p && p.price != null){
+      const orig = p.originalPrice || p.price;
+      rawOriginalSubtotal += orig * x.qty;
+      currentSubtotal += p.price * x.qty;
+    }
+  });
+  const productDiscount = Math.max(0, rawOriginalSubtotal - currentSubtotal);
+  let codeDiscount = 0;
+  if(appliedPromoCode === "DOGA150"){
+    if(currentSubtotal > 800){
+      codeDiscount = Math.min(currentSubtotal, 150);
+    } else {
+      promoMessage = "DOGA150 kodu yalnızca 800 ₺ üzerindeki sepetlerde geçerlidir.";
+    }
+  } else if(promoDiscountRate > 0){
+    codeDiscount = currentSubtotal * promoDiscountRate;
+  }
+  const afterDiscountsSubtotal = Math.max(0, currentSubtotal - codeDiscount);
+  const shippingFee = afterDiscountsSubtotal >= FREE_SHIPPING_THRESHOLD || afterDiscountsSubtotal === 0 ? 0 : SHIPPING_FEE;
+  const finalTotal = afterDiscountsSubtotal + shippingFee;
+  return {
+    rawOriginalSubtotal,
+    currentSubtotal,
+    productDiscount,
+    codeDiscount,
+    shippingFee,
+    finalTotal
+  };
+}
+
+function applyPromoCode(){
+  const inp = document.getElementById("promo-input");
+  if(!inp) return;
+  const code = inp.value.trim().toUpperCase();
+  let currentSubtotal = 0;
+  cart.forEach(x => {
+    const p = products.find(pr => pr.id === x.id);
+    if(p && p.price != null) currentSubtotal += p.price * x.qty;
+  });
+
+  if(!code){
+    appliedPromoCode = "";
+    promoDiscountRate = 0;
+    promoFixedAmount = 0;
+    promoMinSubtotal = 0;
+    promoMessage = "Lütfen bir indirim kodu girin.";
+  } else if(code === "DOGA150"){
+    if(currentSubtotal > 800){
+      appliedPromoCode = "DOGA150";
+      promoDiscountRate = 0;
+      promoFixedAmount = 150;
+      promoMinSubtotal = 800;
+      promoMessage = "DOGA150 kodu uygulandı (800 ₺ üzeri sepette 150,00 ₺ indirim).";
+    } else {
+      appliedPromoCode = "";
+      promoDiscountRate = 0;
+      promoFixedAmount = 0;
+      promoMinSubtotal = 0;
+      promoMessage = "DOGA150 kodu için sepet tutarının 800 ₺ üzerinde olması gerekir.";
+    }
+  } else if(code === "DOGA10" || code === "ODNATURE10"){
+    appliedPromoCode = code;
+    promoDiscountRate = 0.10;
+    promoFixedAmount = 0;
+    promoMinSubtotal = 0;
+    promoMessage = `${code} kodu uygulandı (%10 indirim).`;
+  } else if(code === "HOSGELDIN15"){
+    appliedPromoCode = code;
+    promoDiscountRate = 0.15;
+    promoFixedAmount = 0;
+    promoMinSubtotal = 0;
+    promoMessage = `${code} kodu uygulandı (%15 indirim).`;
+  } else {
+    appliedPromoCode = "";
+    promoDiscountRate = 0;
+    promoFixedAmount = 0;
+    promoMinSubtotal = 0;
+    promoMessage = "Geçersiz indirim kodu. (Örnek kodlar: DOGA150, DOGA10, HOSGELDIN15)";
+  }
+  refreshCheckoutSummaryView();
+}
+
+function refreshCheckoutSummaryView(){
+  const box = document.getElementById("checkout-summary-box");
+  if(!box) return;
+  const s = computeOrderSummary();
+  const freeShipHint = s.currentSubtotal >= FREE_SHIPPING_THRESHOLD
+    ? "<div style='font:11px Arial,sans-serif;color:var(--olive);margin-top:4px'>1.500₺ üzeri alışverişlerde kargo bedava!</div>"
+    : `<div style='font:11px Arial,sans-serif;color:var(--muted);margin-top:4px'>1.500₺ ve üzeri sepetlerde kargo bedava (Kalan: ${moneyExact(Math.max(0, FREE_SHIPPING_THRESHOLD - s.currentSubtotal))})</div>`;
+  box.innerHTML = `
+    <div class="card-box-title" style="margin-bottom:8px">Sipariş Özeti</div>
+    <div class="summary-row"><span>Ürün Ara Toplamı</span><span>${moneyExact(s.rawOriginalSubtotal)}</span></div>
+    ${s.productDiscount > 0 ? `<div class="summary-row discount-line"><span>Ürün İndirimleri</span><span>-${moneyExact(s.productDiscount)}</span></div>` : ""}
+    ${s.codeDiscount > 0 ? `<div class="summary-row discount-line"><span>İndirim Kodu (${appliedPromoCode})</span><span>-${moneyExact(s.codeDiscount)}</span></div>` : ""}
+    <div class="summary-row"><span>Kargo Ücreti</span><span>${s.shippingFee === 0 ? "Ücretsiz (0,00 ₺)" : moneyExact(s.shippingFee)}</span></div>
+    ${freeShipHint}
+    <div class="summary-row total-line"><span>Genel Toplam</span><span>${moneyExact(s.finalTotal)}</span></div>
+  `;
+  const msgEl = document.getElementById("promo-msg");
+  if(msgEl) msgEl.textContent = promoMessage;
+}
+
+function changeCartQty(key,delta){
+  const item=cart.find(x=>(x.key || `${x.id}`)===String(key));
+  if(!item)return;
+  const product=products.find(p=>p.id===item.id);
+  const next=item.qty+delta;
+  if(next<=0){removeItem(key);return;}
+  if(product && product.stock!=null && next>product.stock){alert(`Bu ürün için en fazla ${product.stock} adet seçebilirsiniz.`);return;}
+  item.qty=next;saveCart();renderCart();
+}
+
+function renderCart(){
+  let el = document.getElementById("cart-content");
+  if(!cart.length){
+    el.innerHTML = "<h2>Alışveriş Sepetiniz</h2><p class='empty'>Sepetiniz şu anda boş.</p>";
+    return;
+  }
+  const s = computeOrderSummary();
+  el.innerHTML = `<h2>Alışveriş Sepetiniz</h2>${cart.map(x => {
+    let p = products.find(pr => pr.id === x.id);
+    let k = x.key || `${x.id}`;
+    let colorLabel = x.color ? ` (${x.color})` : "";
+    let hasDisc = p.originalPrice && p.originalPrice > p.price;
+    let priceHtml = hasDisc
+      ? `<span class="old-price">${moneyExact(p.originalPrice * x.qty)}</span> <b>${moneyExact(p.price * x.qty)}</b>`
+      : `<b>${moneyExact(p.price * x.qty)}</b>`;
+    let lowStockTag = (p.stock != null && p.stock > 0 && p.stock <= 3)
+      ? `<span class="cart-low-stock">(${p.lowStockLabel || `Son ${p.stock} Ürün`})</span>`
+      : "";
+    return `<div class="cart-line"><span class="cart-line-main">${p.name}${colorLabel}${lowStockTag}<div class="cart-qty-controls"><button type="button" aria-label="Miktarı azalt" onclick="changeCartQty('${k}',-1)">−</button><b>${x.qty}</b><button type="button" aria-label="Miktarı artır" onclick="changeCartQty('${k}',1)">+</button></div></span><span>${priceHtml} <button onclick="removeItem('${k}')">Kaldır</button></span></div>`;
+  }).join("")}
+  <div class="summary-box">
+    <div class="summary-row"><span>Ara Toplam</span><span>${moneyExact(s.currentSubtotal)}</span></div>
+    ${(s.productDiscount + s.codeDiscount) > 0 ? `<div class="summary-row discount-line"><span>Sepetteki Kazancınız</span><span>+${moneyExact(s.productDiscount + s.codeDiscount)}</span></div>` : ""}
+    <div class="summary-row"><span>Kargo (1.500₺ üzeri bedava)</span><span>${s.shippingFee === 0 ? "Bedava" : moneyExact(s.shippingFee)}</span></div>
+    <div class="summary-row total-line"><span>Toplam</span><span>${moneyExact(s.finalTotal)}</span></div>
+  </div>
+  <button class="btn" onclick="openCheckout()">ÖDEME ADIMINA GEÇ</button>`;
+}
+
+let selectedPaymentMethod = "card"; // "card" | "cod" | "eft"
+let returnToCheckoutAfterAuth = false;
+
+function goToAuthFromCheckout(tab){
+  returnToCheckoutAfterAuth = true;
+  closeCheckout();
+  openAuthModal(tab);
+}
+
+function selectPaymentMethod(method){
+  selectedPaymentMethod = method;
+  document.querySelectorAll(".pay-method-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.method === method);
+  });
+  const cardSec = document.getElementById("pay-section-card");
+  const codSec = document.getElementById("pay-section-cod");
+  const eftSec = document.getElementById("pay-section-eft");
+  const submitBtn = document.getElementById("checkout-submit-btn");
+  if(cardSec) cardSec.style.display = method === "card" ? "block" : "none";
+  if(codSec) codSec.style.display = method === "cod" ? "block" : "none";
+  if(eftSec) eftSec.style.display = method === "eft" ? "block" : "none";
+  if(submitBtn) updateCheckoutSubmitLabel();
+}
+
+function updateCheckoutSubmitLabel(){
+  const submitBtn = document.getElementById("checkout-submit-btn");
+  if(!submitBtn) return;
+  if(selectedPaymentMethod === "card"){
+    const is3d = document.getElementById("use-3d-secure")?.checked;
+    submitBtn.textContent = is3d ? "3D SECURE İLE ÖDEMEYE GEÇ" : "SİPARİŞİ ONAYLA VE ÖDE";
+  } else if(selectedPaymentMethod === "cod"){
+    submitBtn.textContent = "KAPIDA ÖDEME İLE SİPARİŞİ ONAYLA";
+  } else {
+    submitBtn.textContent = "EFT / HAVALE SİPARİŞİNİ ONAYLA";
+  }
+}
+
+function applySavedAddressToCheckout(idxStr){
+  if(idxStr === "") return;
+  const addr = savedAddresses[Number(idxStr)];
+  const ta = document.getElementById("pay-address");
+  if(addr && ta) ta.value = addr.detail;
+}
+
+function applySavedCardToCheckout(idxStr){
+  const holderEl = document.getElementById("card-holder");
+  const numEl = document.getElementById("card-number");
+  const expEl = document.getElementById("card-expiry");
+  if(idxStr === ""){
+    if(holderEl) holderEl.value = "";
+    if(numEl) numEl.value = "";
+    if(expEl) expEl.value = "";
+    return;
+  }
+  const c = savedCards[Number(idxStr)];
+  if(!c) return;
+  if(holderEl) holderEl.value = c.holder;
+  if(numEl) numEl.value = "•••• •••• •••• " + c.last4;
+  if(expEl) expEl.value = c.exp;
+}
+
+function openCheckout(){
+  closeCart();
+  if(!currentUser){
+    document.getElementById("checkout-content").innerHTML = `
+      <div class="eyebrow">ÜYELİK GEREKLİ</div>
+      <h2>Ödeme Adımına Geçiş</h2>
+      <p class="empty" style="padding:4px 0 8px">Siparişinizi tamamlamak, teslimat adresinizi ve kart bilgilerinizi güvenle yönetebilmek için lütfen hesabınıza giriş yapın veya ücretsiz kayıt olun.</p>
+      <div class="auth-gate-actions">
+        <button type="button" class="btn" onclick="goToAuthFromCheckout('login')">GİRİŞ YAP</button>
+        <button type="button" class="btn-outline" onclick="goToAuthFromCheckout('register')">KAYIT OL</button>
+      </div>
+    `;
+    document.getElementById("checkout-modal").classList.add("open");
+    return;
+  }
+
+  selectedPaymentMethod = "card";
+  const defaultAddr = savedAddresses.length ? savedAddresses[0].detail : "";
+  const defaultCard = savedCards.length ? savedCards[0] : null;
+
+  const savedAddrSelectHtml = savedAddresses.length
+    ? `<select onchange="applySavedAddressToCheckout(this.value)" style="width:100%;padding:11px;border:1px solid var(--line);background:#fff;font:12.5px Arial,sans-serif">
+        ${savedAddresses.map((a, i) => `<option value="${i}">${a.title} - ${a.detail.slice(0, 45)}${a.detail.length > 45 ? '...' : ''}</option>`).join("")}
+        <option value="">+ Yeni Adres Gir</option>
+      </select>`
+    : "";
+
+  const savedCardSelectHtml = savedCards.length
+    ? `<select onchange="applySavedCardToCheckout(this.value)" style="width:100%;padding:11px;border:1px solid var(--line);background:#fff;font:12.5px Arial,sans-serif;margin-bottom:8px">
+        ${savedCards.map((c, i) => `<option value="${i}">${c.scheme} •••• ${c.last4} (${c.holder})</option>`).join("")}
+        <option value="">+ Yeni Kart Kullan</option>
+      </select>`
+    : "";
+
+  document.getElementById("checkout-content").innerHTML = `
+    <div class="eyebrow">GÜVENLİ ÖDEME ADIMI</div>
+    <h2>Ödeme Bilgileri</h2>
+    <div id="checkout-summary-box" class="summary-box"></div>
+    <div class="promo-row">
+      <input id="promo-input" placeholder="İndirim Kodu Girin (Örn: DOGA150)" value="${appliedPromoCode}">
+      <button type="button" class="btn" style="padding:11px 16px" onclick="applyPromoCode()">UYGULA</button>
+    </div>
+    <div id="promo-msg" style="font:11.5px Arial,sans-serif;color:var(--olive);margin-bottom:8px">${promoMessage}</div>
+    <div class="checkout-fields">
+      <input id="pay-name" placeholder="Ad Soyad" value="${currentUser ? currentUser.name : ''}" required>
+      <input id="pay-email" type="email" placeholder="E-posta Adresi" value="${currentUser ? currentUser.email : ''}" required>
+      <input id="pay-phone" type="tel" placeholder="Telefon Numarası (5XX XXX XX XX)" value="${currentUser && currentUser.phone ? currentUser.phone : ''}" required>
+      ${savedAddrSelectHtml}
+      <textarea id="pay-address" placeholder="Teslimat Adresi" required>${defaultAddr}</textarea>
+      <label class="save-check-row">
+        <input type="checkbox" id="save-address-chk" ${savedAddresses.length ? '' : 'checked'}>
+        <span>Bu teslimat adresini hesabıma kaydet</span>
+      </label>
+    </div>
+
+    <div class="card-box-title" style="margin:16px 0 6px">Ödeme Seçenekleri</div>
+    <div class="pay-methods-grid">
+      <button type="button" class="pay-method-btn active" data-method="card" onclick="selectPaymentMethod('card')">
+        <span>Kredi / Banka Kartı</span>
+      </button>
+      <button type="button" class="pay-method-btn" data-method="cod" onclick="selectPaymentMethod('cod')">
+        <span>Kapıda Ödeme</span>
+      </button>
+      <button type="button" class="pay-method-btn" data-method="eft" onclick="selectPaymentMethod('eft')">
+        <span>EFT / Havale</span>
+      </button>
+    </div>
+
+    <div id="pay-section-card" class="card-box">
+      <div class="scheme-bar">
+        <div class="card-box-title" style="margin:0">Kart Bilgileri</div>
+        <div class="scheme-badges">
+          <span id="badge-visa" class="scheme-badge visa">VISA</span>
+          <span id="badge-troy" class="scheme-badge troy">TROY</span>
+        </div>
+      </div>
+      ${savedCardSelectHtml}
+      <div class="checkout-fields" style="margin:0">
+        <input id="card-holder" placeholder="Kart Üzerindeki İsim" value="${defaultCard ? defaultCard.holder : ''}" required>
+        <input id="card-number" inputmode="numeric" maxlength="19" placeholder="Kart Numarası (VISA 4... / TROY 9792...)" value="${defaultCard ? '•••• •••• •••• ' + defaultCard.last4 : ''}" oninput="formatCardNumber(this)" required>
+        <div class="card-row-2">
+          <input id="card-expiry" inputmode="numeric" maxlength="5" placeholder="Son Kullanma (AA/YY)" value="${defaultCard ? defaultCard.exp : ''}" oninput="formatExpiry(this)" required>
+          <input id="card-cvv" inputmode="numeric" maxlength="4" placeholder="CVV" required>
+        </div>
+      </div>
+      <div style="margin-top:10px;display:grid;gap:6px">
+        <label class="save-check-row">
+          <input type="checkbox" id="use-3d-secure" checked onchange="updateCheckoutSubmitLabel()">
+          <span><b>3D Secure</b> ile güvenli ödeme yap (SMS / E-posta doğrulama kodu)</span>
+        </label>
+        <label class="save-check-row">
+          <input type="checkbox" id="save-card-chk">
+          <span>Kartımı sonraki alışverişlerim için kaydet</span>
+        </label>
+      </div>
+    </div>
+
+    <div id="pay-section-cod" class="bank-info-box" style="display:none">
+      <b>Kapıda Ödeme Seçeneği</b><br>
+      Siparişiniz teslimat adresinize ulaştığında kargo görevlisine <b>nakit</b> veya <b>kredi/banka kartı</b> ile ödeme yapabilirsiniz.
+    </div>
+
+    <div id="pay-section-eft" class="bank-info-box" style="display:none">
+      <b>EFT / Havale Banka Bilgileri</b><br>
+      Alıcı: <b>OD&amp;NATURE Doğal Mum Atölyesi</b><br>
+      IBAN: <b>TR42 0006 2000 4580 0006 2987 14</b><br>
+      Açıklama kısmına ad soyad bilginizi yazmanız yeterlidir. Ödemeniz onaylandıktan sonra siparişiniz kargoya verilir.
+    </div>
+
+    <button id="checkout-submit-btn" class="btn pay-btn" onclick="startSecureVerification()">3D SECURE İLE ÖDEMEYE GEÇ</button>
+  `;
+  refreshCheckoutSummaryView();
+  document.getElementById("checkout-modal").classList.add("open");
+}
+
+function persistCheckoutSaves({ address, saveAddress, holder, number, expiry, schemeLabel, saveCard, phone }){
+  let accountChanged = false;
+  if(phone && currentUser && currentUser.phone !== phone){
+    currentUser.phone = phone;
+    localStorage.setItem("odnature-current-user", JSON.stringify(currentUser));
+    const uIdx = usersDb.findIndex(u => u.email === currentUser.email);
+    if(uIdx !== -1){
+      usersDb[uIdx].phone = phone;
+      localStorage.setItem("odnature-users", JSON.stringify(usersDb));
+    }
+  }
+  if(saveAddress && address){
+    const exists = savedAddresses.some(a => a.detail.trim().toLowerCase() === address.toLowerCase());
+    if(!exists){
+      savedAddresses.push({
+        id: Date.now(),
+        title: "Teslimat Adresi " + (savedAddresses.length + 1),
+        detail: address
+      });
+      accountChanged = true;
+    }
+  }
+  if(saveCard && holder && number && !number.includes("•")){
+    const last4 = number.slice(-4);
+    const existsCard = savedCards.some(c => c.last4 === last4 && c.holder.toLowerCase() === holder.toLowerCase());
+    if(!existsCard){
+      savedCards.push({
+        id: Date.now() + 1,
+        holder,
+        last4,
+        scheme: schemeLabel || "KART",
+        exp: expiry || "**/**"
+      });
+      accountChanged = true;
+    }
+  }
+  if(accountChanged) saveAccountData();
+}
+
+function finalizeOrderRecord({ name, phone, address, paymentLabel, total }){
+  appliedPromoCode = "";
+  promoDiscountRate = 0;
+  promoFixedAmount = 0;
+  promoMinSubtotal = 0;
+  promoMessage = "";
+
+  userOrders.unshift({
+    id: Date.now(),
+    code: "ODN-" + String(Math.floor(10000 + Math.random() * 90000)),
+    date: new Date().toLocaleDateString("tr-TR"),
+    status: "Hazırlanıyor",
+    total,
+    address
+  });
+  saveAccountData();
+
+  document.getElementById("checkout-content").innerHTML = `
+    <div class="eyebrow">OD&amp;NATURE • SİPARİŞ ONAYLANDI</div>
+    <h2>Siparişiniz Başarıyla Alındı</h2>
+    <p class="empty">Teşekkür ederiz, <b>${name}</b>. <b>${moneyExact(total)}</b> tutarındaki siparişiniz (<b>${paymentLabel}</b>) onaylandı ve <b>Hazırlanıyor</b> durumuna alındı.</p>
+    <p class="empty" style="padding-top:0"><b>Telefon:</b> ${phone}<br><b>Teslimat Adresi:</b> ${address}</p>
+    <button class="btn" onclick="cart=[];saveCart();closeCheckout()">ALIŞVERİŞE DÖN</button>
+  `;
+  cart = [];
+  saveCart();
+}
+
+function startSecureVerification(){
+  const s = computeOrderSummary();
+  const total = s.finalTotal;
+  const name = document.getElementById("pay-name").value.trim();
+  const email = document.getElementById("pay-email").value.trim();
+  const phone = document.getElementById("pay-phone").value.trim();
+  const address = document.getElementById("pay-address").value.trim();
+  const saveAddress = Boolean(document.getElementById("save-address-chk")?.checked);
+
+  if(!name || !email || !phone || !address){
+    alert("Lütfen ad soyad, e-posta, telefon numarası ve teslimat adresi alanlarını eksiksiz doldurun.");
+    return;
+  }
+
+  if(selectedPaymentMethod === "cod"){
+    persistCheckoutSaves({ address, saveAddress, phone });
+    finalizeOrderRecord({ name, phone, address, paymentLabel: "Kapıda Ödeme", total });
+    return;
+  }
+
+  if(selectedPaymentMethod === "eft"){
+    persistCheckoutSaves({ address, saveAddress, phone });
+    finalizeOrderRecord({ name, phone, address, paymentLabel: "EFT / Havale", total });
+    return;
+  }
+
+  // Kredi / Banka Kartı akışı
+  const holder = document.getElementById("card-holder").value.trim();
+  const numInputVal = document.getElementById("card-number").value.trim();
+  const number = numInputVal.replace(/\s/g, "");
+  const expiry = document.getElementById("card-expiry").value.trim();
+  const cvv = document.getElementById("card-cvv").value.trim();
+  const use3d = Boolean(document.getElementById("use-3d-secure")?.checked);
+  const saveCard = Boolean(document.getElementById("save-card-chk")?.checked);
+
+  if(!holder || number.length < 4 || expiry.length < 5 || cvv.length < 3){
+    alert("Lütfen kart üzerindeki isim, kart numarası, son kullanma tarihi ve CVV bilgilerini eksiksiz doldurun.");
+    return;
+  }
+
+  const detected = detectCardScheme(number);
+  const schemeLabel = detected || (savedCards.length ? savedCards[0].scheme : "VISA / TROY");
+  persistCheckoutSaves({ address, saveAddress, holder, number, expiry, schemeLabel, saveCard, phone });
+
+  const last4 = number.slice(-4);
+  if(!use3d){
+    finalizeOrderRecord({
+      name,
+      phone,
+      address,
+      paymentLabel: `${schemeLabel} •••• ${last4}`,
+      total
+    });
+    return;
+  }
+
+  pendingOrderData = {
+    name,
+    email,
+    phone,
+    address,
+    holder,
+    last4,
+    scheme: schemeLabel,
+    total
+  };
+
+  document.getElementById("checkout-content").innerHTML = `
+    <div class="eyebrow">3D SECURE DOĞRULAMA</div>
+    <h2>Güvenli Ödeme Kodu</h2>
+    <div class="otp-box">
+      <div class="scheme-bar">
+        <span class="secure-tag">Kart: <b>${schemeLabel}</b> •••• <b>${pendingOrderData.last4}</b></span>
+        <b>${moneyExact(total)}</b>
+      </div>
+      <p class="otp-code-hint">Ödemeyi onaylamak için <b>${email}</b> adresine ve <b>${phone}</b> numarasına gönderilen 6 haneli güvenli ödeme kodunu girin.</p>
+      <input id="otp-input" inputmode="numeric" maxlength="6" placeholder="6 Haneli Doğrulama Kodu" style="width:100%;padding:13px;border:1px solid var(--line);background:#fff;font:14px Arial,sans-serif;letter-spacing:3px">
+      <div id="otp-status" class="otp-status"></div>
+      <div class="otp-actions">
+        <button class="btn" onclick="verifyCodeAndComplete()">KODU ONAYLA VE ÖDE</button>
+        <button type="button" class="link-btn" onclick="sendVerificationCode()">Kodu Tekrar Gönder</button>
+        <button type="button" class="link-btn" onclick="openCheckout()">Ödeme Bilgilerini Değiştir</button>
+      </div>
+    </div>
+  `;
+  sendVerificationCode();
+}
+
+function verifyCodeAndComplete(){
+  if(!pendingOrderData) return;
+  const entered = document.getElementById("otp-input").value.trim();
+  if(!entered || entered.length < 4){
+    alert("Lütfen gelen güvenli ödeme kodunu girin.");
+    return;
+  }
+  if(generatedOtpCode && entered !== generatedOtpCode){
+    alert("Girdiğiniz doğrulama kodu hatalı. Lütfen kontrol edin veya yeni kod gönderin.");
+    return;
+  }
+
+  const { name, phone, address, last4, scheme, total } = pendingOrderData;
+  pendingOrderData = null;
+  generatedOtpCode = "";
+  finalizeOrderRecord({
+    name,
+    phone,
+    address,
+    paymentLabel: `${scheme} •••• ${last4} • 3D Secure`,
+    total
+  });
+}
+
+renderCollections();
+renderStoryPhoto();
+renderHeroPhoto();
+renderFilters();
+renderProducts();
+loadCustomPhotos();
+saveCart();
+saveFavorites();
+updateHeaderAccount();
+
+/* OD&NATURE AI Ürün Asistanı */
+let aiChatInitialized = false;
+
+function resetAiConversation(){
+  const container = document.getElementById("ai-chat-messages");
+  if(container) container.innerHTML = "";
+  const input = document.getElementById("ai-chat-input");
+  if(input) input.value = "";
+  aiChatInitialized = false;
+}
+
+function toggleAiChat(fromCloseBtn = false){
+  const box = document.getElementById("ai-chat-box");
+  if(!box) return;
+  const isOpen = box.classList.toggle("open");
+  if(isOpen){
+    if(!aiChatInitialized){
+      aiChatInitialized = true;
+      appendAiMessage(
+        "Merhaba! Ben OD&NATURE Ürün Asistanı. Koleksiyonlarımız, koku notaları, fiyatlar, renk seçenekleri veya mum bakımı hakkında bana her şeyi sorabilirsiniz.",
+        "bot"
+      );
+    }
+    setTimeout(() => document.getElementById("ai-chat-input")?.focus(), 80);
+  } else if(fromCloseBtn){
+    resetAiConversation();
+  }
+}
+
+function askAiPreset(question){
+  const input = document.getElementById("ai-chat-input");
+  if(input) input.value = question;
+  handleAiQuestion(question);
+  if(input) input.value = "";
+}
+
+function submitAiChat(e){
+  e.preventDefault();
+  const input = document.getElementById("ai-chat-input");
+  if(!input) return;
+  const text = input.value.trim();
+  if(!text) return;
+  input.value = "";
+  handleAiQuestion(text);
+}
+
+function normalizeTr(str){
+  return (str || "")
+    .toLocaleLowerCase("tr-TR")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ı/g, "i");
+}
+
+function appendAiMessage(text, sender, matchedProducts = []){
+  const container = document.getElementById("ai-chat-messages");
+  if(!container) return;
+  const div = document.createElement("div");
+  div.className = `ai-msg ${sender}`;
+  div.textContent = text;
+
+  if(sender === "bot" && matchedProducts.length){
+    const linksWrap = document.createElement("div");
+    linksWrap.className = "ai-msg-card";
+    matchedProducts.slice(0, 4).forEach(p => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "ai-prod-link";
+      btn.textContent = `${p.name} (${p.price} TL) →`;
+      btn.onclick = () => {
+        if(typeof openProductModal === "function") openProductModal(p.id);
+      };
+      linksWrap.appendChild(btn);
+    });
+    div.appendChild(linksWrap);
+  }
+
+  container.appendChild(div);
+  container.scrollTop = container.scrollHeight;
+}
+
+function handleAiQuestion(rawQuestion){
+  appendAiMessage(rawQuestion, "user");
+  const q = normalizeTr(rawQuestion);
+  const allProducts = Array.isArray(products) ? products : [];
+
+  if(/^(merhaba|selam|slm|hey|iyi gunler|iyi aksamlar)\b/.test(q)){
+    appendAiMessage(
+      "Hoş geldiniz! Size hangi koku tarzında veya hangi koleksiyondan ürün bulmamda yardımcı olmamı istersiniz? (Örn: ferah kokular, ahşap fitilli mumlar, dekoratif heykel mumlar, yapım/bakım kitleri)",
+      "bot"
+    );
+    return;
+  }
+
+  const directMatches = allProducts.filter(p => {
+    const pName = normalizeTr(p.name);
+    const shortName = pName.replace("sculpture & form · ", "").replace("woodfire (odun atesi) · ", "");
+    return q.includes(pName) || (shortName.length > 4 && q.includes(shortName));
+  });
+
+  if(directMatches.length){
+    const lines = directMatches.map(p => {
+      const notesTxt = p.notes ? `\n• Koku Notaları: ${p.notes}` : "";
+      const colorsTxt = (p.colors && p.colors.length) ? `\n• Renk Seçenekleri: ${p.colors.join(", ")}` : "";
+      const stockTxt = p.stock <= 3 ? ` (Son ${p.stock} ürün!)` : ` (Stokta mevcut)`;
+      return `• ${p.name} — ${p.price} TL${stockTxt}${notesTxt}${colorsTxt}\n• Özellik: ${p.specs || p.feature}`;
+    });
+    appendAiMessage(
+      `Aradığınız ürünle ilgili detaylar:\n\n${lines.join("\n\n")}`,
+      "bot",
+      directMatches
+    );
+    return;
+  }
+
+  if(q.includes("ferah") || q.includes("nane") || q.includes("okaliptus") || q.includes("cam") || q.includes("taze")){
+    const list = allProducts.filter(p => p.category === "Aura");
+    appendAiMessage(
+      "Ferah ve nefes açıcı kokular için Aura koleksiyonumuz tam size göre:\n\n• Aura Fresh (480 TL): Okaliptüs, iğne çam ve hafif mentol notaları (250g).\n• Aura Mint (350 TL): Taze nane yaprakları ve hafif narenciye notaları (150g).",
+      "bot",
+      list
+    );
+    return;
+  }
+
+  if(q.includes("odun") || q.includes("vanilya") || q.includes("tarcin") || q.includes("sicak") || q.includes("ahsap fitil") || q.includes("citirti") || q.includes("woodfire")){
+    const list = allProducts.filter(p => p.category === "Woodfire");
+    appendAiMessage(
+      "Şömine çıtırtısı veren ahşap fitilli ve sıcak kokulu Woodfire serimizde 3 seçenek bulunuyor (hepsi 480 TL, 250g, ~45 saat yanma süresi):\n\n• Woodfire (Klasik): Tatlı vanilya, sandal ağacı, amber.\n• Tarçın & Kehribar: Tarçın kabuğu, kehribar, sedir.\n• Tütsü & Kavrulmuş Meşe: Kavrulmuş meşe, reçine, vanilya.",
+      "bot",
+      list
+    );
+    return;
+  }
+
+  if(q.includes("hediye") || q.includes("kit") || q.includes("set") || q.includes("yapim")){
+    const list = allProducts.filter(p => [16, 17, 6, 15].includes(p.id));
+    appendAiMessage(
+      "Hediye için en çok tercih edilen ürünlerimiz:\n\n• Candle Making Kit (1.200 TL): Evde kendi mumunu yapmak isteyenler için eksiksiz atölye kutusu.\n• Candle Care Kit (550 TL): Mat siyah paslanmaz çelik fitil kesici, mum söndürücü ve fitil düzeltici seti.\n• Fiyonk Mumluklu Burgu Mum Seti (500 TL): 4 farklı renk seçeneğiyle dekoratif set.\n• Woodfire Serisi (480 TL): Ahşap fitilli amber cam kavanoz mumlar.",
+      "bot",
+      list
+    );
+    return;
+  }
+
+  if(q.includes("dekor") || q.includes("heykel") || q.includes("figur") || q.includes("ayicik") || q.includes("kugu") || q.includes("bubble") || q.includes("renk")){
+    const list = allProducts.filter(p => p.category === "Sculpture & Form");
+    appendAiMessage(
+      "Sculpture & Form koleksiyonumuzda 12 farklı el yapımı, %100 doğal soya wax ve vegan figür mum yer alıyor (200 TL – 700 TL aralığında). Fiyonk Mumluklu Set, Sütun, Deniz Kabuğu ve Bubble Küp modellerimizde çoklu renk seçenekleri mevcuttur.",
+      "bot",
+      list.slice(0, 4)
+    );
+    return;
+  }
+
+  if(q.includes("fiyat") || q.includes("ucuz") || q.includes("uygun") || q.includes("indirim") || q.includes("kac tl")){
+    const sorted = [...allProducts].sort((a, b) => a.price - b.price);
+    const cheapest = sorted.slice(0, 4);
+    const discounted = allProducts.filter(p => p.originalPrice && p.originalPrice > p.price);
+    appendAiMessage(
+      `Ürün fiyatlarımız 150 TL ile 1.200 TL arasındadır.\n\n• En uygun fiyatlılar: Cam Kibritlik (150 TL), Hayalet Figürlü Mum (200 TL), Sütun Form Mum (200 TL).\n• İndirimli ürünler: ${discounted.map(d => `${d.name} (${d.originalPrice} TL yerine ${d.price} TL)`).join(", ")}.`,
+      "bot",
+      cheapest
+    );
+    return;
+  }
+
+  if(q.includes("soya") || q.includes("parafin") || q.includes("vegan") || q.includes("icerik") || q.includes("bakim") || q.includes("fitil") || q.includes("nasil yakilir")){
+    const care = allProducts.find(p => p.id === 17);
+    appendAiMessage(
+      "Tüm mumlarımız parafin ve toksik madde içermeyen %100 doğal soya wax ile el yapımı olarak üretilir.\n\nMum Bakım İpuçları:\n• İlk yakımda üst yüzey tamamen eriyene kadar bekleyin.\n• Her yakımdan önce fitili ~0,5 cm kısaltın (is oluşumunu önler, mum ömrünü %30 uzatır).\n• Rüzgârsız ortamda kullanın.",
+      "bot",
+      care ? [care] : []
+    );
+    return;
+  }
+
+  const words = q.split(/\s+/).filter(w => w.length > 2);
+  const keywordMatches = allProducts.filter(p => {
+    const hay = normalizeTr(`${p.name} ${p.category} ${p.feature} ${p.description} ${p.notes} ${(p.colors || []).join(" ")}`);
+    return words.some(w => hay.includes(w));
+  });
+
+  if(keywordMatches.length){
+    const summary = keywordMatches.slice(0, 4).map(p => `• ${p.name} (${p.price} TL): ${p.feature}`).join("\n");
+    appendAiMessage(
+      `Sorunuzla eşleşen ${keywordMatches.length} ürün buldum:\n\n${summary}\n\nÜrün detayını incelemek için aşağıdaki butonlara tıklayabilirsiniz:`,
+      "bot",
+      keywordMatches
+    );
+    return;
+  }
+
+  appendAiMessage(
+    "OD&NATURE koleksiyonlarında 5 ana kategori bulunuyor:\n• Aura (350–480 TL): Nane ve okaliptüs-çam ferahlığı\n• Woodfire (480 TL): Ahşap fitilli odunsu kokular\n• Sculpture & Form (200–700 TL): Dekoratif figür mumlar\n• Candle Making Kit (1.200 TL): Evde mum yapım seti\n• Candle Care Kit (150–550 TL): Fitil kesici ve cam kibritlik\n\nHangi ürün veya koku hakkında bilgi istersiniz?",
+    "bot"
+  );
+}
+
+</script>
+</body></html>

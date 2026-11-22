@@ -1,0 +1,43 @@
+OD&NATURE — KULLANIM VE FOTOĞRAF EKLEME REHBERİ
+
+1) KODSUZ DOĞRUDAN SİTE ÜZERİNDEN FOTOĞRAF EKLEME (ÖNERİLEN):
+- index.html dosyasını tarayıcınızda açın.
+- "Ürünlerimiz" başlığının altındaki "+ KODSUZ FOTOĞRAF EKLE / DÜZENLE" butonuna (veya herhangi bir ürün kartının sağ altındaki "+ Fotoğraf" butonuna, ya da ürün detay penceresindeki "+ Bu Ürüne Fotoğraf Ekle" butonuna) tıklayın.
+- Bilgisayarınızdan veya telefonunuzdan tek seferde 1 veya birden fazla fotoğraf seçin.
+- Yüklediğiniz fotoğraflar otomatik kaydedilir ve hem ana sayfadaki ürün kartlarında hem de ürün detay sayfasında Trendyol'daki gibi sağa/sola kaydırmalı galeri şeklinde görünür.
+
+2) KLASÖRE DOSYA ATARAK EKLEME (İSTEĞE BAĞLI):
+Fotoğraflarınızı 'images/' klasörüne aşağıdaki isimlerle koyduğunuzda da otomatik görünür:
+- Aura Fresh: images/aura-fresh-1.jpg , images/aura-fresh-2.jpg
+- Aura Mint : images/aura-mint.jpeg (mevcut) , images/aura-mint-2.jpg
+- Heykel Figür Mumu: images/sculpture-01-1.jpg , images/sculpture-01-2.jpg
+- Ayıcık Figürlü Mum: images/sculpture-02-1.jpg , images/sculpture-02-2.jpg
+- Burgu Form Mum: images/sculpture-03-1.jpg , images/sculpture-03-2.jpg
+- Fiyonk Mumluklu Burgu Mum Seti: images/sculpture-04-1.jpg , images/sculpture-04-2.jpg
+- Fiyonk Mumluklu Tekli Burgu Mum: images/sculpture-05-1.jpg , images/sculpture-05-2.jpg
+- Renkli Burgu Mum: images/sculpture-06-1.jpg , images/sculpture-06-2.jpg
+- Katmanlı Çam Form Mum: images/sculpture-07-1.jpg , images/sculpture-07-2.jpg
+- Pastel Burgu Mum Üçlüsü: images/sculpture-08-1.jpg , images/sculpture-08-2.jpg
+- Kemer Form Mum: images/sculpture-09-1.jpg , images/sculpture-09-2.jpg
+- Sütun Form Mum: images/sculpture-10-1.jpg , images/sculpture-10-2.jpg
+- Deniz Kabuğu Mum: images/sculpture-11-1.jpg , images/sculpture-11-2.jpg
+- Bubble Küp Mum: images/sculpture-12-1.jpg , images/sculpture-12-2.jpg
+- Woodfire: images/woodfire-1.jpg , images/woodfire-2.jpg
+- Candle Making Kit: images/candle-making-kit-1.jpg , images/candle-making-kit-2.jpg
+- Candle Care Kit: images/candle-care-kit-1.jpg , images/candle-care-kit-2.jpg
+- Cam Kibritlik: images/cam-kibritlik-1.jpg , images/cam-kibritlik-2.jpg
+- Kapak ve Hikâye görselleri: images/hero.jpg ve images/story.jpg
+
+
+FOTOĞRAFLARI TELEFONA AKTARMA
+1. Fotoğrafların kayıtlı olduğu bilgisayarda siteyi açın.
+2. Fotoğraf Yönetimi bölümüne girip “Fotoğrafları dışa aktar” düğmesine basın. odnature-fotograf-yedegi.json dosyası iner.
+3. Bu JSON dosyasını telefonunuza gönderin (ör. e-posta veya dosya paylaşımı).
+4. Telefonda aynı siteyi açın, Fotoğraf Yönetimi bölümüne girin ve “Fotoğraf yedeğini içe aktar” seçeneğiyle dosyayı seçin.
+5. Fotoğraflar telefondaki tarayıcıya kaydedilir. Tarayıcı verilerini silerseniz yedeği yeniden içe aktarmanız gerekebilir.
+
+Not: Site fotoğrafları tarayıcı depolamasında tuttuğu için farklı cihazlara otomatik senkronize olmaz. Bu sürümde fotoğraf yedeği dışa/içe aktarma özelliği eklendi.
+
+FOTOĞRAF YÖNETİMİ EKRANINI AÇMA
+Site dosyasını açarken adresin sonuna ?yonetim=1 ekleyin. Örnek: index.html?yonetim=1
+Ürünler bölümünün üstünde “Fotoğraf Yönetimi / Cihazlar Arası Aktarım” düğmesi görünür. Normal müşteri görünümünde bu düğme gösterilmez.
