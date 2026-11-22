@@ -31,7 +31,7 @@ nav{display:flex;gap:28px;font:11px Arial,sans-serif;letter-spacing:1.5px;text-t
 .section{max-width:1220px;margin:auto;padding:82px 28px}.section-head{text-align:center;margin-bottom:38px}.section-head .eyebrow{color:var(--olive)}h2{font-size:38px;font-weight:400;margin:12px 0}.section-head p{font:13px/1.7 Arial,sans-serif;color:var(--muted);max-width:560px;margin:0 auto}
 .collections{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.collection{height:310px;position:relative;overflow:hidden;background:#ddd5c9}.collection img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.collection:hover img{transform:scale(1.04)}.collection span{position:absolute;bottom:22px;left:22px;color:white;font-size:27px;text-shadow:0 1px 8px #0008}
 .filters{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin:0 0 32px}.filter-btn{border:1px solid var(--line);background:transparent;padding:11px 15px;cursor:pointer;font:11px Arial,sans-serif}.filter-btn.active{background:var(--ink);color:white}.series-label{font:10px Arial,sans-serif;letter-spacing:1px;color:var(--olive);margin-bottom:8px}.pending{font:12px Arial,sans-serif;color:var(--muted)}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 20px}.product{min-width:0}.product-image{height:330px;background:var(--cream);position:relative;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.product:hover .product-image img{transform:scale(1.035)}.product-info{padding:17px 2px}.product-info h3{font-size:19px;font-weight:400;margin:0 0 8px}.product-info p{font:12px/1.6 Arial,sans-serif;color:var(--muted);min-height:38px;margin:0 0 12px}.price{font:13px Arial,sans-serif;letter-spacing:.5px}.product-info button{float:right;border:0;background:none;text-decoration:underline;text-underline-offset:4px;font:10px Arial,sans-serif;letter-spacing:1px;cursor:pointer}
-.story{background:var(--cream)}.story-inner{max-width:1220px;margin:auto;padding:80px 28px;display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.story-image{height:440px;background:url('images/story.jpg') center/cover no-repeat,#d8cbbb}.story-copy .eyebrow{color:var(--olive)}.story-copy h2{font-size:42px;line-height:1.15}.story-copy p{font:14px/1.9 Arial,sans-serif;color:var(--muted)}
+.story{background:var(--cream)}.story-inner{max-width:1220px;margin:auto;padding:80px 28px;display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.story-image{height:440px;background:url('images/logo.png') center/contain no-repeat,#f8f4ec}.story-copy .eyebrow{color:var(--olive)}.story-copy h2{font-size:42px;line-height:1.15}.story-copy p{font:14px/1.9 Arial,sans-serif;color:var(--muted)}
 .values{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}.value{padding:28px 15px;border-top:1px solid var(--line)}.value b{display:block;font-size:20px;font-weight:400;margin-bottom:10px}.value span{font:12px/1.7 Arial,sans-serif;color:var(--muted)}
 footer{background:#33362b;color:#f6f2e9;padding:45px 28px;text-align:center}.footer-brand{font-size:25px;letter-spacing:3px}.footer-tag{font:10px Arial,sans-serif;letter-spacing:2px;margin:10px 0 25px;color:#d6cfbf}.footer-note{font:11px Arial,sans-serif;color:#c9c2b5}
 .modal-backdrop{display:none;position:fixed;inset:0;background:#0007;z-index:20;align-items:center;justify-content:center;padding:18px}.modal-backdrop.open{display:flex}.modal{background:var(--paper);width:min(680px,100%);max-height:90vh;overflow:auto;padding:30px;position:relative}.close{position:absolute;right:18px;top:15px;border:0;background:none;font-size:24px;cursor:pointer}.modal h2{font-size:30px}.cart-line{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:15px 0;font:13px Arial,sans-serif}.cart-line button{border:0;background:none;text-decoration:underline;cursor:pointer}.cart-total{display:flex;justify-content:space-between;padding:20px 0;font:15px Arial,sans-serif}.empty{color:var(--muted);font:13px Arial,sans-serif;padding:20px 0}.checkout-fields{display:grid;gap:12px;margin:20px 0}.checkout-fields input,.checkout-fields textarea{width:100%;padding:13px;border:1px solid var(--line);background:white;font:13px Arial,sans-serif}.checkout-fields textarea{min-height:75px}.notice{background:#f0ede5;padding:13px;font:12px/1.6 Arial,sans-serif;color:#5d584f;margin:15px 0}
@@ -189,7 +189,7 @@ footer{background:#33362b;color:#f6f2e9;padding:58px 28px 34px;text-align:center
 .box-photo-btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
 .box-photo-btn input{display:none}
 .story-image{position:relative;overflow:hidden}
-.story-image img{width:100%;height:100%;object-fit:cover;display:block}
+.story-image img{width:100%;height:100%;object-fit:contain;display:block}
 .summary-box{background:#f7f4ee;border:1px solid var(--line);padding:16px;margin:14px 0}
 .summary-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;font:12.5px Arial,sans-serif;color:#4e483f}
 .summary-row.discount-line{color:#8c3227;font-weight:700}
@@ -371,7 +371,7 @@ footer{background:#33362b;color:#f6f2e9;padding:58px 28px 34px;text-align:center
 <section class="section" id="urunler" style="padding-top:20px"><div class="section-head"><div class="eyebrow">SİZİN İÇİN SEÇTİKLERİMİZ</div><h2>Ürünlerimiz</h2></div>
 <div class="filters" id="product-filters"></div><div class="products" id="product-grid"></div></section>
 <section class="story" id="hikayemiz"><div class="story-inner"><div class="story-image" id="story-photo-box" role="img" aria-label="OD&amp;NATURE atmosfer fotoğrafı">
-  <img id="story-photo-img" src="images/story.jpg" alt="OD&amp;NATURE Hikâyemiz" onerror="this.style.opacity=0">
+  <img id="story-photo-img" src="images/logo.png" alt="OD&amp;NATURE Logo" onerror="this.style.opacity=0">
 </div><div class="story-copy">
   <div class="eyebrow">BİZİM HİKÂYEMİZ</div>
   <h2>Doğanın ateşi, evinizin ahengi.</h2>
@@ -543,7 +543,7 @@ const products = [
     "colors": [],
     "images": [
       "images/aura-mint.jpeg",
-      "images/aura-mint-2.jpg"
+      "images/aura-mint-info.jpg"
     ],
     "originalPrice": 420,
     "burnTime": "30-35 saat"
@@ -560,8 +560,7 @@ const products = [
     "specs": "180g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
     "colors": [],
     "images": [
-      "images/sculpture-01-1.jpg",
-      "images/sculpture-01-2.jpg"
+      "images/sculpture-01-1.jpg"
     ],
     "dimensions": "12 cm x 7 cm"
   },
@@ -577,8 +576,7 @@ const products = [
     "specs": "120g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
     "colors": [],
     "images": [
-      "images/sculpture-02-1.jpg",
-      "images/sculpture-02-2.jpg"
+      "images/sculpture-02-1.jpg"
     ],
     "dimensions": "8 cm x 6 cm"
   },
@@ -594,8 +592,7 @@ const products = [
     "specs": "110g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
     "colors": [],
     "images": [
-      "images/sculpture-03-1.jpg",
-      "images/sculpture-03-2.jpg"
+      "images/sculpture-03-1.jpg"
     ],
     "dimensions": "18 cm x 4 cm"
   },
@@ -634,8 +631,7 @@ const products = [
     "specs": "85g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
     "colors": [],
     "images": [
-      "images/sculpture-05-1.jpg",
-      "images/sculpture-05-2.jpg"
+      "images/sculpture-05-1.jpg"
     ],
     "dimensions": "7 cm x 6 cm"
   },
@@ -651,7 +647,6 @@ const products = [
     "specs": "130g %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
     "colors": [],
     "images": [
-      "images/sculpture-06-swan.jpg",
       "images/sculpture-06-swan.jpg"
     ],
     "dimensions": "9 cm x 8 cm"
@@ -672,8 +667,7 @@ const products = [
       "Yeşil"
     ],
     "images": [
-      "images/sculpture-07-1.jpg",
-      "images/sculpture-07-2.jpg"
+      "images/sculpture-07-1.jpg"
     ],
     "dimensions": "10 cm x 7 cm"
   },
@@ -689,8 +683,7 @@ const products = [
     "specs": "180g (3x60g) %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
     "colors": [],
     "images": [
-      "images/sculpture-08-1.jpg",
-      "images/sculpture-08-2.jpg"
+      "images/sculpture-08-1.jpg"
     ],
     "dimensions": "15 cm x 3 cm (Adet)"
   },
@@ -706,8 +699,7 @@ const products = [
     "specs": "210g (3'lü Set) %100 Doğal Soya Wax | Vegan & İs Yapmayan Doğal Fitil",
     "colors": [],
     "images": [
-      "images/sculpture-09-1.jpg",
-      "images/sculpture-09-2.jpg"
+      "images/sculpture-09-1.jpg"
     ],
     "dimensions": "Büyük Boy: 14 cm x 10 cm | Orta Boy: 11 cm x 8 cm | Küçük Boy: 8 cm x 6 cm"
   },
@@ -730,8 +722,7 @@ const products = [
       "Sarı"
     ],
     "images": [
-      "images/sculpture-10-1.jpg",
-      "images/sculpture-10-2.jpg"
+      "images/sculpture-10-1.jpg"
     ],
     "dimensions": "10 cm x 5 cm"
   },
@@ -754,8 +745,8 @@ const products = [
       "Pembe"
     ],
     "images": [
-      "images/sculpture-11-1.jpg",
-      "images/sculpture-11-2.jpg"
+      "images/sculpture-11-2.jpg",
+      "images/sculpture-11-1.jpg"
     ],
     "dimensions": "8 cm x 8 cm"
   },
@@ -778,7 +769,6 @@ const products = [
       "Yeşil"
     ],
     "images": [
-      "images/sculpture-12-bubble.jpg",
       "images/sculpture-12-bubble.jpg"
     ],
     "dimensions": "6 cm x 6 cm"
@@ -799,8 +789,7 @@ const products = [
       "Kahverengi"
     ],
     "images": [
-      "images/woodfire-1.jpg",
-      "images/woodfire-2.jpg"
+      "images/woodfire-white.jpg"
     ],
     "colorTargetId": {
       "Beyaz": 15,
@@ -830,8 +819,7 @@ const products = [
       "Kahverengi": 20
     },
     "images": [
-      "images/woodfire-cinnamon-amber.png",
-      "images/woodfire-cinnamon-amber.png"
+      "images/woodfire-caramel.jpg"
     ],
     "burnTime": "Yaklaşık 45 saat"
   },
@@ -856,8 +844,7 @@ const products = [
       "Kahverengi": 20
     },
     "images": [
-      "images/woodfire-smoked-oak.png",
-      "images/woodfire-smoked-oak.png"
+      "images/woodfire-dark.jpg"
     ],
     "burnTime": "Yaklaşık 45 saat"
   },
@@ -2040,7 +2027,7 @@ function renderCollections(){
 function renderStoryPhoto(){
   const img = document.getElementById("story-photo-img");
   if(!img) return;
-  const src = sectionPhotos["story"] || "images/story.jpg";
+  const src = sectionPhotos["story"] || "images/logo.png";
   img.src = src;
   img.style.opacity = 1;
 }
